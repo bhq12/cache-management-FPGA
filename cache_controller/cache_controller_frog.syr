@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.95 secs
+Total CPU time to Xst completion: 0.72 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.95 secs
+Total CPU time to Xst completion: 0.74 secs
  
 --> Reading design: cache_controller_frog.prj
 
@@ -75,10 +75,8 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//file/usersb$/bhq12/home/cache_controller/cache_controller_frog.vhd" in Library work.
-Entity <cache_controller_frog> compiled.
-WARNING:HDLParsers:1406 - "//file/usersb$/bhq12/home/cache_controller/cache_controller_frog.vhd" Line 47. No sensitivity list and no wait in the process
-Entity <cache_controller_frog> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" in Library work.
+Architecture behavioral of Entity cache_controller_frog is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -90,18 +88,118 @@ Analyzing hierarchy for entity <cache_controller_frog> in library <work> (archit
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <cache_controller_frog> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache_controller/cache_controller_frog.vhd" line 68: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <hm>
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache_controller/cache_controller_frog.vhd" line 74: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <read_ready>
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache_controller/cache_controller_frog.vhd" line 47: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <operation>, <address_in>, <data_in>, <data_from_device>
-ERROR:Xst:827 - "//file/usersb$/bhq12/home/cache_controller/cache_controller_frog.vhd" line 47: Signal ec cannot be synthesized, bad synchronous description. The description style you are using to describe a synchronous element (register, memory, etc.) is not supported in the current software release.
+WARNING:Xst:819 - "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" line 64: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <operation>, <address_in>, <data_in>, <data_from_device>, <hm>, <read_ready>
+Entity <cache_controller_frog> analyzed. Unit <cache_controller_frog> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <cache_controller_frog>.
+    Related source file is "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:1608 - Relative priorities of control signals on register <ec> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 1-bit latch for signal <ec>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <em>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <data_result>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <address_out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <data_to_device>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <rw_out>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+Unit <cache_controller_frog> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 6
+ 1-bit latch                                           : 3
+ 8-bit latch                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Latches                                              : 6
+ 1-bit latch                                           : 3
+ 8-bit latch                                           : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <cache_controller_frog> ...
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : cache_controller_frog.ngr
+Top Level Output File Name         : cache_controller_frog
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : Yes
+Target Technology                  : Automotive 9500XL
+Macro Preserve                     : YES
+XOR Preserve                       : YES
+Clock Enable                       : YES
+wysiwyg                            : NO
+
+Design Statistics
+# IOs                              : 57
+
+Cell Usage :
+# BELS                             : 70
+#      AND2                        : 34
+#      AND3                        : 1
+#      AND4                        : 1
+#      INV                         : 23
+#      OR2                         : 9
+#      VCC                         : 1
+#      XOR2                        : 1
+# FlipFlops/Latches                : 27
+#      LD                          : 17
+#      LDC                         : 1
+#      LDCP                        : 9
+# IO Buffers                       : 56
+#      IBUF                        : 29
+#      OBUF                        : 27
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 3.58 secs
+ 
 --> 
 
-Total memory usage is 195792 kilobytes
+Total memory usage is 198352 kilobytes
 
-Number of errors   :    1 (   0 filtered)
-Number of warnings :    4 (   0 filtered)
-Number of infos    :    0 (   0 filtered)
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    8 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
 

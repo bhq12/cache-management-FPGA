@@ -1,0 +1,2 @@
+vhdl isim_temp "cache_controller_frog.vhd"
+vhdl isim_temp "cache_controller_tb.vhd"

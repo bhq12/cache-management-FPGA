@@ -1,0 +1,10 @@
+[Inputs]
+enable
+rw
+=address[7:0]=
+=data_in[7:0]=
+[Outputs]
+hit_miss
+output_ready
+=data_out[7:0]=
+[BiDir]
