@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "P:/cache_controller/SRAM.xst" -ofn "P:/cache_controller/SRAM.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl SRAM.ngc SRAM.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper SRAM.ngd 

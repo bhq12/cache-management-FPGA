@@ -1,0 +1,12 @@
+xst -intstyle ise -ifn "P:/cache_controller/cache_ram.xst" -ofn "P:/cache_controller/cache_ram.syr" 
+xst -intstyle ise -ifn "P:/cache_controller/cache_ram.xst" -ofn "P:/cache_controller/cache_ram.syr" 
+xst -intstyle ise -ifn "P:/cache_controller/cache_ram.xst" -ofn "P:/cache_controller/cache_ram.syr" 
+xst -intstyle ise -ifn "P:/cache_controller/cache_ram.xst" -ofn "P:/cache_controller/cache_ram.syr" 
+xst -intstyle ise -ifn "P:/cache_controller/cache_ram.xst" -ofn "P:/cache_controller/cache_ram.syr" 
+xst -intstyle ise -ifn "P:/cache_controller/cache_ram.xst" -ofn "P:/cache_controller/cache_ram.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl cache_ram.ngc cache_ram.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper cache_ram.ngd 
+XSLTProcess cache_ram_build.xml 
+tsim -intstyle ise cache_ram cache_ram.nga 
+taengine -intstyle ise -f cache_ram -w --format html1 -l cache_ram_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n cache_ram -i cache_ram 

@@ -1,0 +1,13 @@
+ 
+cpldfit:  version M.81d                             Xilinx Inc.
+                                  No Fit Report
+Design Name: SRAM                                Date: 10- 5-2016,  3:28PM
+Device Used: 
+Fitting Status: Design Rule Checking Failed
+
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'SRAM.ise'.
+ERROR:Cpld:1005 - Design 'SRAM' has no outputs. 
+
