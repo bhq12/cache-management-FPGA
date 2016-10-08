@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "P:/FPGA2016/cache-management-FPGA/cache_controller/cache_ram_two_way_tb_isim_beh.exe" -prj "P:/FPGA2016/cache-management-FPGA/cache_controller/cache_ram_two_way_tb_beh.prj" "work.cache_ram_two_way_tb" 

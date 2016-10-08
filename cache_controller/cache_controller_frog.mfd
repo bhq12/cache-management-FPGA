@@ -1,0 +1,465 @@
+MDF Database:  version 1.0
+MDF_INFO | cache_controller_frog | XA9572XL-15-TQ100
+MACROCELL | 0 | 9 | data_to_device_0
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 0 | 9
+INPUTS | 5 | read_ready  | data_from_device<0>  | data_to_device<0>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_in<0>
+INPUTMC | 2 | 0 | 9 | 3 | 11
+INPUTP | 3 | 21 | 13 | 55
+EQ | 5 | 
+   data_to_device<0> = read_ready & data_from_device<0>
+	# data_to_device<0> & !read_ready & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2
+	# !read_ready & data_in<0> & 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 0 | 12 | data_to_device_1
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 0 | 12
+INPUTS | 5 | read_ready  | data_from_device<1>  | data_to_device<1>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_in<1>
+INPUTMC | 2 | 0 | 12 | 3 | 11
+INPUTP | 3 | 21 | 16 | 37
+EQ | 5 | 
+   data_to_device<1> = read_ready & data_from_device<1>
+	# data_to_device<1> & !read_ready & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2
+	# !read_ready & data_in<1> & 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 3 | 12 | data_to_device_2
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 3 | 12
+INPUTS | 5 | read_ready  | data_from_device<2>  | data_to_device<2>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_in<2>
+INPUTMC | 2 | 3 | 12 | 3 | 11
+INPUTP | 3 | 21 | 20 | 82
+EQ | 5 | 
+   data_to_device<2> = read_ready & data_from_device<2>
+	# data_to_device<2> & !read_ready & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2
+	# !read_ready & data_in<2> & 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 0 | 15 | data_to_device_3
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 0 | 15
+INPUTS | 5 | read_ready  | data_from_device<3>  | data_to_device<3>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_in<3>
+INPUTMC | 2 | 0 | 15 | 3 | 11
+INPUTP | 3 | 21 | 27 | 26
+EQ | 5 | 
+   data_to_device<3> = read_ready & data_from_device<3>
+	# data_to_device<3> & !read_ready & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2
+	# !read_ready & data_in<3> & 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 3 | 15 | data_to_device_4
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 3 | 15
+INPUTS | 5 | read_ready  | data_from_device<4>  | data_to_device<4>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_in<4>
+INPUTMC | 2 | 3 | 15 | 3 | 11
+INPUTP | 3 | 21 | 83 | 86
+EQ | 5 | 
+   data_to_device<4> = read_ready & data_from_device<4>
+	# data_to_device<4> & !read_ready & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2
+	# !read_ready & data_in<4> & 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 2 | 12 | data_to_device_5
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 2 | 12
+INPUTS | 5 | read_ready  | data_from_device<5>  | data_to_device<5>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_in<5>
+INPUTMC | 2 | 2 | 12 | 3 | 11
+INPUTP | 3 | 21 | 11 | 2
+EQ | 5 | 
+   data_to_device<5> = read_ready & data_from_device<5>
+	# data_to_device<5> & !read_ready & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2
+	# !read_ready & data_in<5> & 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 0 | 0 | data_to_device_6
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 7 | read_ready  | data_from_device<6>  | data_to_device<6>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_to_device_6__and0001/data_to_device_6__and0001_D2  | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2  | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2
+INPUTMC | 5 | 0 | 0 | 3 | 11 | 3 | 14 | 2 | 14 | 3 | 13
+INPUTP | 2 | 21 | 1
+EQ | 12 | 
+   !data_to_device<6> = read_ready & !data_from_device<6>
+	# !data_to_device<6> & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2 & 
+	!data_to_device_6__and0001/data_to_device_6__and0001_D2
+	# !data_to_device<6> & 
+	!data_to_device_6__and0001/data_to_device_6__and0001_D2 & 
+	!data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 & 
+	!data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2
+	# ec_cmp_eq0000/ec_cmp_eq0000_D2 & 
+	!data_to_device_6__and0001/data_to_device_6__and0001_D2 & 
+	!data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 & 
+	!data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2;
+
+MACROCELL | 0 | 3 | data_to_device_7
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 7 | read_ready  | data_from_device<7>  | data_to_device<7>  | ec_cmp_eq0000/ec_cmp_eq0000_D2  | data_to_device_7__and0001/data_to_device_7__and0001_D2  | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2  | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2
+INPUTMC | 5 | 0 | 3 | 3 | 11 | 2 | 16 | 2 | 11 | 2 | 13
+INPUTP | 2 | 21 | 9
+EQ | 12 | 
+   !data_to_device<7> = read_ready & !data_from_device<7>
+	# !data_to_device<7> & 
+	!ec_cmp_eq0000/ec_cmp_eq0000_D2 & 
+	!data_to_device_7__and0001/data_to_device_7__and0001_D2
+	# !data_to_device<7> & 
+	!data_to_device_7__and0001/data_to_device_7__and0001_D2 & 
+	!data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 & 
+	!data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2
+	# ec_cmp_eq0000/ec_cmp_eq0000_D2 & 
+	!data_to_device_7__and0001/data_to_device_7__and0001_D2 & 
+	!data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 & 
+	!data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2;
+
+MACROCELL | 2 | 15 | ec_OBUF
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 2 | 15
+INPUTS | 4 | read_ready  | hm  | ec  | ec_cmp_eq0000/ec_cmp_eq0000_D2
+INPUTMC | 2 | 2 | 15 | 3 | 11
+INPUTP | 2 | 21 | 89
+EQ | 2 | 
+   !ec = !read_ready & hm
+	# !ec & !read_ready & !ec_cmp_eq0000/ec_cmp_eq0000_D2;
+
+MACROCELL | 2 | 17 | em_OBUF
+ATTRIBUTES | 396035 | 0
+OUTPUTMC | 1 | 2 | 17
+INPUTS | 3 | read_ready  | em  | hm
+INPUTMC | 1 | 2 | 17
+INPUTP | 2 | 21 | 89
+EQ | 2 | 
+   em = !read_ready & em
+	# !read_ready & hm;
+
+MACROCELL | 3 | 0 | address_out_0
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<0>
+INPUTP | 4 | 65 | 75 | 10 | 3
+EQ | 6 | 
+   address_out<0>.D = Gnd;
+   address_out<0>.CLK = Gnd;
+   address_out<0>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<0>;
+   address_out<0>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<0>;
+
+MACROCELL | 0 | 6 | address_out_1
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<1>
+INPUTP | 4 | 65 | 75 | 10 | 85
+EQ | 6 | 
+   address_out<1>.D = Gnd;
+   address_out<1>.CLK = Gnd;
+   address_out<1>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<1>;
+   address_out<1>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<1>;
+
+MACROCELL | 1 | 0 | address_out_2
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<2>
+INPUTP | 4 | 65 | 75 | 10 | 92
+EQ | 6 | 
+   address_out<2>.D = Gnd;
+   address_out<2>.CLK = Gnd;
+   address_out<2>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<2>;
+   address_out<2>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<2>;
+
+MACROCELL | 1 | 2 | address_out_3
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<3>
+INPUTP | 4 | 65 | 75 | 10 | 6
+EQ | 6 | 
+   address_out<3>.D = Gnd;
+   address_out<3>.CLK = Gnd;
+   address_out<3>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<3>;
+   address_out<3>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<3>;
+
+MACROCELL | 1 | 4 | address_out_4
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<4>
+INPUTP | 4 | 65 | 75 | 10 | 47
+EQ | 6 | 
+   address_out<4>.D = Gnd;
+   address_out<4>.CLK = Gnd;
+   address_out<4>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<4>;
+   address_out<4>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<4>;
+
+MACROCELL | 1 | 7 | address_out_5
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<5>
+INPUTP | 4 | 65 | 75 | 10 | 87
+EQ | 6 | 
+   address_out<5>.D = Gnd;
+   address_out<5>.CLK = Gnd;
+   address_out<5>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<5>;
+   address_out<5>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<5>;
+
+MACROCELL | 3 | 3 | address_out_6
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<6>
+INPUTP | 4 | 65 | 75 | 10 | 15
+EQ | 6 | 
+   address_out<6>.D = Gnd;
+   address_out<6>.CLK = Gnd;
+   address_out<6>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<6>;
+   address_out<6>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<6>;
+
+MACROCELL | 1 | 11 | address_out_7
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | address_in<7>
+INPUTP | 4 | 65 | 75 | 10 | 31
+EQ | 6 | 
+   address_out<7>.D = Gnd;
+   address_out<7>.CLK = Gnd;
+   address_out<7>.AP = !operation<0> & operation<2> & !operation<1> & 
+	address_in<7>;
+   address_out<7>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!address_in<7>;
+
+MACROCELL | 3 | 6 | data_result_0
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<0>
+INPUTP | 4 | 65 | 75 | 10 | 13
+EQ | 6 | 
+   data_result<0>.D = Gnd;
+   data_result<0>.CLK = Gnd;
+   data_result<0>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<0>;
+   data_result<0>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<0>;
+
+MACROCELL | 1 | 13 | data_result_1
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<1>
+INPUTP | 4 | 65 | 75 | 10 | 16
+EQ | 6 | 
+   data_result<1>.D = Gnd;
+   data_result<1>.CLK = Gnd;
+   data_result<1>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<1>;
+   data_result<1>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<1>;
+
+MACROCELL | 3 | 9 | data_result_2
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<2>
+INPUTP | 4 | 65 | 75 | 10 | 20
+EQ | 6 | 
+   data_result<2>.D = Gnd;
+   data_result<2>.CLK = Gnd;
+   data_result<2>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<2>;
+   data_result<2>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<2>;
+
+MACROCELL | 1 | 15 | data_result_3
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<3>
+INPUTP | 4 | 65 | 75 | 10 | 27
+EQ | 6 | 
+   data_result<3>.D = Gnd;
+   data_result<3>.CLK = Gnd;
+   data_result<3>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<3>;
+   data_result<3>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<3>;
+
+MACROCELL | 2 | 1 | data_result_4
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<4>
+INPUTP | 4 | 65 | 75 | 10 | 83
+EQ | 6 | 
+   data_result<4>.D = Gnd;
+   data_result<4>.CLK = Gnd;
+   data_result<4>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<4>;
+   data_result<4>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<4>;
+
+MACROCELL | 2 | 3 | data_result_5
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<5>
+INPUTP | 4 | 65 | 75 | 10 | 11
+EQ | 6 | 
+   data_result<5>.D = Gnd;
+   data_result<5>.CLK = Gnd;
+   data_result<5>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<5>;
+   data_result<5>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<5>;
+
+MACROCELL | 2 | 6 | data_result_6
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<6>
+INPUTP | 4 | 65 | 75 | 10 | 1
+EQ | 6 | 
+   data_result<6>.D = Gnd;
+   data_result<6>.CLK = Gnd;
+   data_result<6>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<6>;
+   data_result<6>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<6>;
+
+MACROCELL | 2 | 9 | data_result_7
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | data_from_device<7>
+INPUTP | 4 | 65 | 75 | 10 | 9
+EQ | 6 | 
+   data_result<7>.D = Gnd;
+   data_result<7>.CLK = Gnd;
+   data_result<7>.AP = !operation<0> & operation<2> & !operation<1> & 
+	data_from_device<7>;
+   data_result<7>.AR = !operation<0> & operation<2> & !operation<1> & 
+	!data_from_device<7>;
+
+MACROCELL | 3 | 17 | rw_out_OBUF
+ATTRIBUTES | 8651699 | 0
+INPUTS | 4 | operation<0>  | operation<2>  | operation<1>  | rw_out_OBUF/rw_out_OBUF_RSTF
+INPUTMC | 1 | 3 | 16
+INPUTP | 3 | 65 | 75 | 10
+EQ | 5 | 
+   rw_out.D = Gnd;
+   rw_out.CLK = Gnd;
+   rw_out.AP = operation<0> & !operation<2> & !operation<1> & 
+	!rw_out_OBUF/rw_out_OBUF_RSTF;
+   rw_out.AR = rw_out_OBUF/rw_out_OBUF_RSTF;
+
+MACROCELL | 3 | 11 | ec_cmp_eq0000/ec_cmp_eq0000_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 9 | 0 | 9 | 0 | 12 | 3 | 12 | 0 | 15 | 3 | 15 | 2 | 12 | 0 | 0 | 0 | 3 | 2 | 15
+INPUTS | 3 | operation<0>  | operation<2>  | operation<1>
+INPUTP | 3 | 65 | 75 | 10
+EQ | 1 | 
+   ec_cmp_eq0000/ec_cmp_eq0000_D2 = !operation<0> & operation<2> & !operation<1>;
+
+MACROCELL | 3 | 14 | data_to_device_6__and0001/data_to_device_6__and0001_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 2 | read_ready  | data_from_device<6>
+INPUTP | 2 | 21 | 1
+EQ | 1 | 
+   data_to_device_6__and0001/data_to_device_6__and0001_D2 = read_ready & data_from_device<6>;
+
+MACROCELL | 2 | 14 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 2 | read_ready  | data_in<6>
+INPUTP | 2 | 21 | 70
+EQ | 1 | 
+   data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 = !read_ready & data_in<6>;
+
+MACROCELL | 3 | 13 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 0
+INPUTS | 2 | read_ready  | data_from_device<6>
+INPUTP | 2 | 21 | 1
+EQ | 1 | 
+   data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 = read_ready & data_from_device<6>;
+
+MACROCELL | 2 | 16 | data_to_device_7__and0001/data_to_device_7__and0001_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 2 | read_ready  | data_from_device<7>
+INPUTP | 2 | 21 | 9
+EQ | 1 | 
+   data_to_device_7__and0001/data_to_device_7__and0001_D2 = read_ready & data_from_device<7>;
+
+MACROCELL | 2 | 11 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 2 | read_ready  | data_in<7>
+INPUTP | 2 | 21 | 30
+EQ | 1 | 
+   data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 = !read_ready & data_in<7>;
+
+MACROCELL | 2 | 13 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 0 | 3
+INPUTS | 2 | read_ready  | data_from_device<7>
+INPUTP | 2 | 21 | 9
+EQ | 1 | 
+   data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 = read_ready & data_from_device<7>;
+
+MACROCELL | 3 | 16 | rw_out_OBUF/rw_out_OBUF_RSTF
+ATTRIBUTES | 133889 | 0
+OUTPUTMC | 1 | 3 | 17
+INPUTS | 4 | read_ready  | operation<0>  | operation<2>  | operation<1>
+INPUTP | 4 | 21 | 65 | 75 | 10
+EQ | 2 | 
+   rw_out_OBUF/rw_out_OBUF_RSTF = read_ready
+	# !operation<0> & !operation<2> & operation<1>;
+
+PIN | read_ready | 64 | 0 | N/A | 21 | 17 | 0 | 9 | 0 | 12 | 3 | 12 | 0 | 15 | 3 | 15 | 2 | 12 | 0 | 0 | 0 | 3 | 2 | 15 | 2 | 17 | 3 | 14 | 2 | 14 | 3 | 13 | 2 | 16 | 2 | 11 | 2 | 13 | 3 | 16
+PIN | data_from_device<0> | 64 | 0 | N/A | 13 | 2 | 0 | 9 | 3 | 6
+PIN | data_in<0> | 64 | 0 | N/A | 55 | 1 | 0 | 9
+PIN | data_from_device<1> | 64 | 0 | N/A | 16 | 2 | 0 | 12 | 1 | 13
+PIN | data_in<1> | 64 | 0 | N/A | 37 | 1 | 0 | 12
+PIN | data_from_device<2> | 64 | 0 | N/A | 20 | 2 | 3 | 12 | 3 | 9
+PIN | data_in<2> | 64 | 0 | N/A | 82 | 1 | 3 | 12
+PIN | data_from_device<3> | 64 | 0 | N/A | 27 | 2 | 0 | 15 | 1 | 15
+PIN | data_in<3> | 64 | 0 | N/A | 26 | 1 | 0 | 15
+PIN | data_from_device<4> | 64 | 0 | N/A | 83 | 2 | 3 | 15 | 2 | 1
+PIN | data_in<4> | 64 | 0 | N/A | 86 | 1 | 3 | 15
+PIN | data_from_device<5> | 64 | 0 | N/A | 11 | 2 | 2 | 12 | 2 | 3
+PIN | data_in<5> | 64 | 0 | N/A | 2 | 1 | 2 | 12
+PIN | data_from_device<6> | 64 | 0 | N/A | 1 | 4 | 0 | 0 | 2 | 6 | 3 | 14 | 3 | 13
+PIN | data_from_device<7> | 64 | 0 | N/A | 9 | 4 | 0 | 3 | 2 | 9 | 2 | 16 | 2 | 13
+PIN | hm | 64 | 0 | N/A | 89 | 2 | 2 | 15 | 2 | 17
+PIN | operation<0> | 64 | 0 | N/A | 65 | 19 | 3 | 0 | 0 | 6 | 1 | 0 | 1 | 2 | 1 | 4 | 1 | 7 | 3 | 3 | 1 | 11 | 3 | 6 | 1 | 13 | 3 | 9 | 1 | 15 | 2 | 1 | 2 | 3 | 2 | 6 | 2 | 9 | 3 | 17 | 3 | 11 | 3 | 16
+PIN | operation<2> | 64 | 0 | N/A | 75 | 19 | 3 | 0 | 0 | 6 | 1 | 0 | 1 | 2 | 1 | 4 | 1 | 7 | 3 | 3 | 1 | 11 | 3 | 6 | 1 | 13 | 3 | 9 | 1 | 15 | 2 | 1 | 2 | 3 | 2 | 6 | 2 | 9 | 3 | 17 | 3 | 11 | 3 | 16
+PIN | operation<1> | 64 | 0 | N/A | 10 | 19 | 3 | 0 | 0 | 6 | 1 | 0 | 1 | 2 | 1 | 4 | 1 | 7 | 3 | 3 | 1 | 11 | 3 | 6 | 1 | 13 | 3 | 9 | 1 | 15 | 2 | 1 | 2 | 3 | 2 | 6 | 2 | 9 | 3 | 17 | 3 | 11 | 3 | 16
+PIN | address_in<0> | 64 | 0 | N/A | 3 | 1 | 3 | 0
+PIN | address_in<1> | 64 | 0 | N/A | 85 | 1 | 0 | 6
+PIN | address_in<2> | 64 | 0 | N/A | 92 | 1 | 1 | 0
+PIN | address_in<3> | 64 | 0 | N/A | 6 | 1 | 1 | 2
+PIN | address_in<4> | 64 | 0 | N/A | 47 | 1 | 1 | 4
+PIN | address_in<5> | 64 | 0 | N/A | 87 | 1 | 1 | 7
+PIN | address_in<6> | 64 | 0 | N/A | 15 | 1 | 3 | 3
+PIN | address_in<7> | 64 | 0 | N/A | 31 | 1 | 1 | 11
+PIN | data_in<6> | 64 | 0 | N/A | 70 | 1 | 2 | 14
+PIN | data_in<7> | 64 | 0 | N/A | 30 | 1 | 2 | 11
+PIN | data_to_device<0> | 536871040 | 0 | N/A | 25
+PIN | data_to_device<1> | 536871040 | 0 | N/A | 32
+PIN | data_to_device<2> | 536871040 | 0 | N/A | 78
+PIN | data_to_device<3> | 536871040 | 0 | N/A | 35
+PIN | data_to_device<4> | 536871040 | 0 | N/A | 79
+PIN | data_to_device<5> | 536871040 | 0 | N/A | 58
+PIN | data_to_device<6> | 536871040 | 0 | N/A | 14
+PIN | data_to_device<7> | 536871040 | 0 | N/A | 17
+PIN | ec | 536871040 | 0 | N/A | 59
+PIN | em | 536871040 | 0 | N/A | 53
+PIN | address_out<0> | 536871040 | 0 | N/A | 60
+PIN | address_out<1> | 536871040 | 0 | N/A | 22
+PIN | address_out<2> | 536871040 | 0 | N/A | 80
+PIN | address_out<3> | 536871040 | 0 | N/A | 84
+PIN | address_out<4> | 536871040 | 0 | N/A | 88
+PIN | address_out<5> | 536871040 | 0 | N/A | 90
+PIN | address_out<6> | 536871040 | 0 | N/A | 67
+PIN | address_out<7> | 536871040 | 0 | N/A | 5
+PIN | data_result<0> | 536871040 | 0 | N/A | 71
+PIN | data_result<1> | 536871040 | 0 | N/A | 7
+PIN | data_result<2> | 536871040 | 0 | N/A | 74
+PIN | data_result<3> | 536871040 | 0 | N/A | 8
+PIN | data_result<4> | 536871040 | 0 | N/A | 29
+PIN | data_result<5> | 536871040 | 0 | N/A | 44
+PIN | data_result<6> | 536871040 | 0 | N/A | 48
+PIN | data_result<7> | 536871040 | 0 | N/A | 54
+PIN | rw_out | 536871040 | 0 | N/A | 73

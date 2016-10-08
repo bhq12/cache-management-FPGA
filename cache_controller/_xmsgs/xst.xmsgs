@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd</arg>&quot; line <arg fmt="%d" index="2">64</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+<msg type="warning" file="Xst" num="819" delta="old" >&quot;<arg fmt="%s" index="1">//file/userss$/srj52/home/FPGA2016/cache-management-FPGA/cache_controller/cache_controller_frog.vhd</arg>&quot; line <arg fmt="%d" index="2">64</arg>: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
 <arg fmt="%s" index="3">&lt;operation&gt;, &lt;address_in&gt;, &lt;data_in&gt;, &lt;data_from_device&gt;, &lt;hm&gt;, &lt;read_ready&gt;</arg>
 </msg>
 

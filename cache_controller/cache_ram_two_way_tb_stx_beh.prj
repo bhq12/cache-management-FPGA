@@ -1,0 +1,2 @@
+vhdl isim_temp "cache_ram_two_way.vhd"
+vhdl isim_temp "cache_ram_two_way_tb.vhd"

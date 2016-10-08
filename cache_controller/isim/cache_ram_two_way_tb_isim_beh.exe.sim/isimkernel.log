@@ -1,0 +1,28 @@
+Command line:
+   cache_ram_two_way_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  65366
+
+Sat Oct 08 17:34:59 2016
+
+
+ Elaboration Time: 0.093601 sec
+
+ Current Memory Usage: 1481.07 Meg
+
+ Total Signals          : 23
+ Total Nets             : 422
+ Total Signal Drivers   : 15
+ Total Blocks           : 5
+ Total Primitive Blocks : 4
+ Total Processes        : 3
+ Total Traceable Variables  : 11
+ Total Scalar Nets and Variables : 801
+
+ Total Simulation Time: 0.421202 sec
+
+ Current Memory Usage: 694.608 Meg
+
+Sat Oct 08 17:53:51 2016
+

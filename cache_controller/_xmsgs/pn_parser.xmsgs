@@ -5,10 +5,10 @@
 <!--     behavior or data corruption.  It is strongly advised that -->
 <!--     users do not edit the contents of this file.              -->
 <!--                                                               -->
-<!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.    -->
+<!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/FPGA2016/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd&quot; into library work</arg>
 </msg>
 
 </messages>

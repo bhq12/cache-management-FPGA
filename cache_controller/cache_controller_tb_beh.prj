@@ -1,0 +1,2 @@
+vhdl work "cache_controller_frog.vhd"
+vhdl work "cache_controller_tb.vhd"
