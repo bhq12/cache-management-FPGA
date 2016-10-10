@@ -1,0 +1,5 @@
+set -tmpdir "P:/My Documents/cache-management-FPGA/cache_controller/xst/projnav.tmp"
+set -xsthdpdir "P:/My Documents/cache-management-FPGA/cache_controller/xst"
+elaborate
+-ifn cache_ram_two_way.prj
+-ifmt mixed

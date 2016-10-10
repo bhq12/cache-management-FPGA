@@ -1,5 +1,5 @@
 ISim log file
-Running: P:\cache-management-FPGA\cache_controller\cache_system_tb_isim_beh.exe -gui -tclbatch isim.cmd -wdb P:/cache-management-FPGA/cache_controller/cache_system_tb_isim_beh.wdb 
+Running: P:\My Documents\cache-management-FPGA\cache_controller\cache_ram_tb_isim_beh.exe -gui -tclbatch isim.cmd -wdb P:/My Documents/cache-management-FPGA/cache_controller/cache_ram_tb_isim_beh.wdb 
 ISim M.81d (signature 0xcb73ee62)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@licserver'.
@@ -20,8 +20,10 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 215 ns(1), Instance /cache_system_tb/uut/CACHE_MEMORY/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 215 ns(1), Instance /cache_system_tb/uut/CACHE_MEMORY/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 215 ns(1), Instance /cache_system_tb/uut/CACHE_MEMORY/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
-at 215 ns(1), Instance /cache_system_tb/uut/CACHE_MEMORY/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
-at 250 ns: Error: Case: Cache read hit error: expected 00101010
+at 100 ns: Note: Starting testing environment setup (/cache_ram_tb/).
+at 110 ns(1), Instance /cache_ram_tb/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 110 ns(1), Instance /cache_ram_tb/uut/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 110 ns(1), Instance /cache_ram_tb/uut/ : Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+at 110 ns(1), Instance /cache_ram_tb/uut/ : Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+at 160 ns: Note: Finished testing environment setup (/cache_ram_tb/).
+at 220 ns: Note: Finished all unit tests (/cache_ram_tb/).

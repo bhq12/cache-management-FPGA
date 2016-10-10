@@ -1,4 +1,5 @@
 EN cache_controller NULL //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd sub00/vhpl08 1476053746
+EN cache_ram_two_way NULL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd" sub00/vhpl12 1476092979
 EN simple_ram NULL //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd sub00/vhpl04 1476075300
 AR cache_system behavioral //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_system.vhd sub00/vhpl11 1476075305
 EN sram NULL //file/usersb$/bhq12/home/cache_controller/SRAM.vhd sub00/vhpl00 1475634512
@@ -6,6 +7,7 @@ EN cache_controller_frog NULL //file/usersb$/bhq12/home/cache-management-FPGA/ca
 EN cache_ram NULL //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd sub00/vhpl02 1476075302
 EN cache_system NULL //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_system.vhd sub00/vhpl10 1476075304
 AR cache_controller_frog behavioral //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd sub00/vhpl07 1476075299
+AR cache_ram_two_way behavioral "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd" sub00/vhpl13 1476092980
 AR sram behavioral //file/usersb$/bhq12/home/cache_controller/SRAM.vhd sub00/vhpl01 1475634513
 AR cache_ram behavioral //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd sub00/vhpl03 1476075303
 AR simple_ram behavioral //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd sub00/vhpl05 1476075301

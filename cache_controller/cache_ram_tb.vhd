@@ -29,7 +29,7 @@ LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
 use ieee.std_logic_arith.all;
 use ieee.std_logic_unsigned.all; 
- 
+
 -- Uncomment the following library declaration if using
 -- arithmetic functions with Signed or Unsigned values
 --USE ieee.numeric_std.ALL;
@@ -67,6 +67,7 @@ ARCHITECTURE behavior OF cache_ram_tb IS
 
    -- Clock period definitions
    constant clk_period : time := 10 ns;
+
  
 BEGIN
  
@@ -93,51 +94,59 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
+	
+	
+	procedure write_to(
+		ADDR : in unsigned(7 downto 0);
+		DATA : in std_logic_vector(7 downto 0) ) is
+		begin
+			address <= ADDR;
+			data_in <= DATA;
+			rw <= '0';
+			
+			wait for 10 ns;
+			enable <= '1';
+			wait for 10 ns;
+			enable <= '0';
+			wait for 10 ns;
+	end write_to;
+	
+	procedure read_from(
+		ADDR_IN : in unsigned(7 downto 0) ) is
+		begin
+			address <= ADDR_IN;
+			data_in <= "00000000";
+			rw <= '1';
+			
+			wait for 10 ns;
+			enable <= '1';
+			wait for 10 ns;
+			enable <= '0';
+			wait for 10 ns;
+	end read_from;
+	
+	
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;	
 
       -- insert stimulus here 
 
-		address <= "00010010";
-		data_in <= "00101001";
-		rw <= '0';
+		-- Testing environment setup phase
+		report "Starting testing environment setup";
+		write_to("00010010", "00101001");
+		write_to("00100010", "00101000");
+		report "Finished testing environment setup";
 		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
+		-- Case Read from cache buffer with hit
+		read_from("00010010");
+		assert data_out = "00101000" report "Error: Case Read from buffer failed expected '00010010'";
 		
-		address <= "00100010";
-		data_in <= "00101000";
-		rw <= '0';
-		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
-		
-		address <= "00010010";
-		data_in <= "00000000";
-		rw <= '1';
-		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
-		
-		address <= "00110010";
-		data_in <= "00000000";
-		rw <= '1';
-		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
+		-- Case Read from cache buffer with miss
+		read_from("00110010");
+		assert hit_miss = '1' report "Error: Case Read from cache buffer with miss failed expected '1'";
+
+		report "Finished running all unit tests";
 
       wait;
    end process;

@@ -1,4 +1,4 @@
-V3 24
+V3 27
 FL //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd 2016/10/10.17:00:34 M.81d
 EN work/cache_controller_frog 1476075298 \
       FL //file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd \
@@ -41,4 +41,12 @@ AR work/SRAM/Behavioral 1475634513 \
       FL //file/usersb$/bhq12/home/cache_controller/SRAM.vhd EN work/SRAM 1475634512
 FL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" 2016/10/07.15:57:08 M.81d
 FL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd" 2016/10/07.16:38:00 M.81d
+FL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd" 2016/10/10.22:48:08 M.81d
+EN work/cache_ram_two_way 1476092979 \
+      FL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd" \
+      PB ieee/std_logic_1164 1290154108 PB ieee/std_logic_arith 1290154109 \
+      PB ieee/STD_LOGIC_UNSIGNED 1290154110
+AR work/cache_ram_two_way/Behavioral 1476092980 \
+      FL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd" \
+      EN work/cache_ram_two_way 1476092979
 FL "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/simple_ram.vhd" 2016/10/07.13:39:22 M.81d

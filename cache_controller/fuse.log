@@ -1,29 +1,23 @@
-Running: \\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o P:/cache-management-FPGA/cache_controller/cache_system_tb_isim_beh.exe -prj P:/cache-management-FPGA/cache_controller/cache_system_tb_beh.prj work.cache_system_tb 
+Running: \\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\fuse.exe -intstyle ise -incremental -o P:/My Documents/cache-management-FPGA/cache_controller/cache_ram_tb_isim_beh.exe -prj P:/My Documents/cache-management-FPGA/cache_controller/cache_ram_tb_beh.prj work.cache_ram_tb 
 ISim M.81d (signature 0xcb73ee62)
-Number of CPUs detected in this system: 8
-Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Number of CPUs detected in this system: 4
+Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "P:/cache-management-FPGA/cache_controller/simple_ram.vhd" into library work
-Parsing VHDL file "P:/cache-management-FPGA/cache_controller/cache_ram.vhd" into library work
-Parsing VHDL file "P:/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" into library work
-Parsing VHDL file "P:/cache-management-FPGA/cache_controller/cache_system.vhd" into library work
-Parsing VHDL file "P:/cache-management-FPGA/cache_controller/cache_system_tb.vhd" into library work
+Parsing VHDL file "P:/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd" into library work
+Parsing VHDL file "P:/My Documents/cache-management-FPGA/cache_controller/cache_ram_tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
-Fuse Memory Usage: 112888 KB
-Fuse CPU Usage: 187 ms
+Fuse Memory Usage: 112696 KB
+Fuse CPU Usage: 343 ms
 Using precompiled package standard from library std
 Using precompiled package std_logic_1164 from library ieee
 Using precompiled package std_logic_arith from library ieee
 Using precompiled package std_logic_unsigned from library ieee
-Compiling architecture behavioral of entity cache_controller_frog [cache_controller_frog_default]
-Compiling architecture behavioral of entity simple_ram [simple_ram_default]
 Compiling architecture behavioral of entity cache_ram [cache_ram_default]
-Compiling architecture behavioral of entity cache_system [cache_system_default]
-Compiling architecture behavior of entity cache_system_tb
+Compiling architecture behavior of entity cache_ram_tb
 Time Resolution for simulation is 1ps.
 Waiting for 1 sub-compilation(s) to finish...
-Compiled 13 VHDL Units
-Built simulation executable P:/cache-management-FPGA/cache_controller/cache_system_tb_isim_beh.exe
-Fuse Memory Usage: 139496 KB
-Fuse CPU Usage: 296 ms
+Compiled 7 VHDL Units
+Built simulation executable P:/My Documents/cache-management-FPGA/cache_controller/cache_ram_tb_isim_beh.exe
+Fuse Memory Usage: 138280 KB
+Fuse CPU Usage: 453 ms
