@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.84 secs
+Total CPU time to Xst completion: 0.80 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.84 secs
+Total CPU time to Xst completion: 0.82 secs
  
 --> Reading design: cache_system.prj
 
@@ -75,18 +75,14 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" in Library work.
-Entity <cache_controller_frog> compiled.
-Entity <cache_controller_frog> (Architecture <behavioral>) compiled.
-Compiling vhdl file "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd" in Library work.
-Entity <simple_ram> compiled.
-Entity <simple_ram> (Architecture <behavioral>) compiled.
-Compiling vhdl file "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd" in Library work.
-Entity <cache_ram> compiled.
-Entity <cache_ram> (Architecture <behavioral>) compiled.
-Compiling vhdl file "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_system.vhd" in Library work.
-Entity <cache_system> compiled.
-Entity <cache_system> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" in Library work.
+Architecture behavioral of Entity cache_controller_frog is up to date.
+Compiling vhdl file "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/simple_ram.vhd" in Library work.
+Architecture behavioral of Entity simple_ram is up to date.
+Compiling vhdl file "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd" in Library work.
+Architecture behavioral of Entity cache_ram is up to date.
+Compiling vhdl file "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_system.vhd" in Library work.
+Architecture behavioral of Entity cache_system is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -107,17 +103,17 @@ Analyzing Entity <cache_system> in library <work> (Architecture <behavioral>).
 Entity <cache_system> analyzed. Unit <cache_system> generated.
 
 Analyzing Entity <cache_controller_frog> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" line 64: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd" line 64: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <address_in>, <data_in>, <hm>, <data_from_cache>, <operation>, <data_from_memory>, <read_ready>
 Entity <cache_controller_frog> analyzed. Unit <cache_controller_frog> generated.
 
 Analyzing Entity <simple_ram> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/simple_ram.vhd" line 49: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <enable>, <rw>, <data_in>
 Entity <simple_ram> analyzed. Unit <simple_ram> generated.
 
 Analyzing Entity <cache_ram> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd" line 58: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd" line 58: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <enable>, <address>, <rw>, <data_in>
 Entity <cache_ram> analyzed. Unit <cache_ram> generated.
 
@@ -129,7 +125,7 @@ Entity <cache_ram> analyzed. Unit <cache_ram> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <cache_controller_frog>.
-    Related source file is "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_controller_frog.vhd".
+    Related source file is "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 1-bit latch for signal <ec>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
@@ -141,7 +137,7 @@ Unit <cache_controller_frog> synthesized.
 
 
 Synthesizing Unit <simple_ram>.
-    Related source file is "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd".
+    Related source file is "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/simple_ram.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 8-bit latch for signal <ram1_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 8-bit latch for signal <ram1_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -406,7 +402,7 @@ Unit <simple_ram> synthesized.
 
 
 Synthesizing Unit <cache_ram>.
-    Related source file is "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd".
+    Related source file is "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd".
 WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
 WARNING:Xst:737 - Found 8-bit latch for signal <cache_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
 WARNING:Xst:737 - Found 8-bit latch for signal <cache_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
@@ -452,7 +448,7 @@ Unit <cache_ram> synthesized.
 
 
 Synthesizing Unit <cache_system>.
-    Related source file is "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_system.vhd".
+    Related source file is "//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/cache_system.vhd".
 Unit <cache_system> synthesized.
 
 
@@ -475,92 +471,4 @@ Macro Statistics
 =========================================================================
 *                       Advanced HDL Synthesis                          *
 =========================================================================
-
-
-=========================================================================
-Advanced HDL Synthesis Report
-
-Macro Statistics
-# Latches                                              : 297
- 1-bit latch                                           : 5
- 4-bit latch                                           : 18
- 8-bit latch                                           : 274
-# Comparators                                          : 1
- 4-bit comparator equal                                : 1
-# Multiplexers                                         : 2
- 4-bit 16-to-1 multiplexer                             : 1
- 8-bit 256-to-1 multiplexer                            : 1
-
-=========================================================================
-
-=========================================================================
-*                         Low Level Synthesis                           *
-=========================================================================
-
-Optimizing unit <cache_system> ...
-
-Optimizing unit <cache_controller_frog> ...
-
-Optimizing unit <simple_ram> ...
-
-Optimizing unit <cache_ram> ...
-
-=========================================================================
-*                           Partition Report                            *
-=========================================================================
-
-Partition Implementation Status
--------------------------------
-
-  No Partitions were found in this design.
-
--------------------------------
-
-=========================================================================
-*                            Final Report                               *
-=========================================================================
-Final Results
-RTL Top Level Output File Name     : cache_system.ngr
-Top Level Output File Name         : cache_system
-Output Format                      : NGC
-Optimization Goal                  : Speed
-Keep Hierarchy                     : Yes
-Target Technology                  : Automotive 9500XL
-Macro Preserve                     : YES
-XOR Preserve                       : YES
-Clock Enable                       : YES
-wysiwyg                            : NO
-
-Design Statistics
-# IOs                              : 28
-
-Cell Usage :
-# BELS                             : 29255
-#      AND2                        : 10805
-#      AND3                        : 759
-#      AND4                        : 3355
-#      AND8                        : 90
-#      INV                         : 11589
-#      OR2                         : 2339
-#      OR4                         : 8
-#      OR8                         : 304
-#      XOR2                        : 6
-# FlipFlops/Latches                : 2269
-#      LD                          : 2269
-# IO Buffers                       : 27
-#      IBUF                        : 19
-#      OBUF                        : 8
-=========================================================================
-
-
-Total REAL time to Xst completion: 46.00 secs
-Total CPU time to Xst completion: 45.99 secs
- 
---> 
-
-Total memory usage is 489032 kilobytes
-
-Number of errors   :    0 (   0 filtered)
-Number of warnings :  303 (   0 filtered)
-Number of infos    :    3 (   0 filtered)
 

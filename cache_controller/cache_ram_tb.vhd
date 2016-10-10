@@ -140,11 +140,11 @@ BEGIN
 		
 		-- Case Read from cache buffer with hit
 		read_from("00010010");
-		assert data_out = "00101000" report "Error: Case Read from buffer failed expected '00010010'";
+		assert data_out = "00101000" report "Case Read from buffer failed expected '00010010'";
 		
 		-- Case Read from cache buffer with miss
 		read_from("00110010");
-		assert hit_miss = '1' report "Error: Case Read from cache buffer with miss failed expected '1'";
+		assert hit_miss = '1' report "Case Read from cache buffer with miss failed expected '1'";
 
 		report "Finished running all unit tests";
 

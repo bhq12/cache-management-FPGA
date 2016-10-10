@@ -105,13 +105,12 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cache_ram_envsettings.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_ram_isim_beh.exe"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cache_ram_summary.html"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_ram_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_ram_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cache_ram_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_ram_tb_stx_beh.prj"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_ram_two_way.prj"/>
     <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="cache_ram_two_way.stx"/>
     <file xil_pn:fileType="FILE_XST" xil_pn:name="cache_ram_two_way.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_ram_two_way_isim_beh.exe"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_ram_two_way_tb_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_ram_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cache_ram_xst.xrpt"/>
@@ -130,6 +129,21 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="cache_system_summary.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_system_tb_isim_beh.exe"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_tb_stx_beh.prj"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="cache_system_two_way.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="cache_system_two_way.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="cache_system_two_way.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="cache_system_two_way.ngr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_two_way.prj"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="cache_system_two_way.spl"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="cache_system_two_way.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="cache_system_two_way.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cache_system_two_way.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cache_system_two_way.xst"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_two_way_tb_beh.prj"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_system_two_way_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cache_system_two_way_tb_isim_beh.wdb"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_two_way_vhdl.prj"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cache_system_two_way_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cache_system_xst.xrpt"/>
     <file xil_pn:fileType="FILE_LOG" xil_pn:name="fuse.log"/>
@@ -150,6 +164,7 @@
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="simple_ram_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="simple_ram_summary.html"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="simple_ram_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="simple_ram_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="simple_ram_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="simple_ram_xst.xrpt"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -159,11 +174,11 @@
   </files>
 
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
-    <transform xil_pn:end_ts="1476097942" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1476097942">
+    <transform xil_pn:end_ts="1476099574" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1476099574">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476097942" xil_pn:in_ck="749915150434635780" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476097942">
+    <transform xil_pn:end_ts="1476104285" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476104285">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="cache_controller_frog.vhd"/>
@@ -174,14 +189,16 @@
       <outfile xil_pn:name="cache_ram_two_way_tb.vhd"/>
       <outfile xil_pn:name="cache_system.vhd"/>
       <outfile xil_pn:name="cache_system_tb.vhd"/>
+      <outfile xil_pn:name="cache_system_two_way.vhd"/>
+      <outfile xil_pn:name="cache_system_two_way_tb.vhd"/>
       <outfile xil_pn:name="simple_ram.vhd"/>
       <outfile xil_pn:name="simple_ram_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1476097942" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-6329491262654696334" xil_pn:start_ts="1476097942">
+    <transform xil_pn:end_ts="1476104240" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5618771094972602688" xil_pn:start_ts="1476104240">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476097942" xil_pn:in_ck="749915150434635780" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1476097942">
+    <transform xil_pn:end_ts="1476104285" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1476104285">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="cache_controller_frog.vhd"/>
@@ -192,23 +209,32 @@
       <outfile xil_pn:name="cache_ram_two_way_tb.vhd"/>
       <outfile xil_pn:name="cache_system.vhd"/>
       <outfile xil_pn:name="cache_system_tb.vhd"/>
+      <outfile xil_pn:name="cache_system_two_way.vhd"/>
+      <outfile xil_pn:name="cache_system_two_way_tb.vhd"/>
       <outfile xil_pn:name="simple_ram.vhd"/>
       <outfile xil_pn:name="simple_ram_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1476097946" xil_pn:in_ck="749915150434635780" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-3923861274118726334" xil_pn:start_ts="1476097942">
+    <transform xil_pn:end_ts="1476104292" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4107519222671187298" xil_pn:start_ts="1476104285">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="cache_ram_tb_beh.prj"/>
-      <outfile xil_pn:name="cache_ram_tb_isim_beh.exe"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="cache_system_two_way_tb_beh.prj"/>
+      <outfile xil_pn:name="cache_system_two_way_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1476097947" xil_pn:in_ck="5708132420635800996" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="3019094632552548261" xil_pn:start_ts="1476097946">
+    <transform xil_pn:end_ts="1476104293" xil_pn:in_ck="8828384327062100436" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7537987239759714207" xil_pn:start_ts="1476104292">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <outfile xil_pn:name="cache_ram_tb_isim_beh.wdb"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="cache_system_two_way_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
     </transform>
@@ -216,34 +242,26 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476059977" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-8214536361113399921" xil_pn:start_ts="1476059977">
+    <transform xil_pn:end_ts="1476101676" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="6884603218582424408" xil_pn:start_ts="1476101676">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476075343" xil_pn:in_ck="-6689103810704498920" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-3604496141365210641" xil_pn:start_ts="1476075288">
+    <transform xil_pn:end_ts="1476102048" xil_pn:in_ck="9188353742596801749" xil_pn:name="TRANEXT_xstsynthesize_xc9500xl" xil_pn:prop_ck="-2418780025701186216" xil_pn:start_ts="1476101929">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
-      <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name=".lso"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="cache_controller_frog.ngr"/>
-      <outfile xil_pn:name="cache_ram.ngr"/>
-      <outfile xil_pn:name="cache_system.lso"/>
-      <outfile xil_pn:name="cache_system.ngc"/>
-      <outfile xil_pn:name="cache_system.ngr"/>
-      <outfile xil_pn:name="cache_system.prj"/>
-      <outfile xil_pn:name="cache_system.stx"/>
-      <outfile xil_pn:name="cache_system.syr"/>
-      <outfile xil_pn:name="cache_system.xst"/>
-      <outfile xil_pn:name="cache_system_stx_beh.prj"/>
-      <outfile xil_pn:name="cache_system_tb_stx_beh.prj"/>
-      <outfile xil_pn:name="cache_system_vhdl.prj"/>
-      <outfile xil_pn:name="cache_system_xst.xrpt"/>
+      <outfile xil_pn:name="cache_system_two_way.lso"/>
+      <outfile xil_pn:name="cache_system_two_way.ngc"/>
+      <outfile xil_pn:name="cache_system_two_way.ngr"/>
+      <outfile xil_pn:name="cache_system_two_way.prj"/>
+      <outfile xil_pn:name="cache_system_two_way.stx"/>
+      <outfile xil_pn:name="cache_system_two_way.syr"/>
+      <outfile xil_pn:name="cache_system_two_way.xst"/>
+      <outfile xil_pn:name="cache_system_two_way_vhdl.prj"/>
+      <outfile xil_pn:name="cache_system_two_way_xst.xrpt"/>
       <outfile xil_pn:name="simple_ram.ngr"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
@@ -251,6 +269,7 @@
     <transform xil_pn:end_ts="1476059040" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="7302432404419738384" xil_pn:start_ts="1476059040">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
   </transforms>
 

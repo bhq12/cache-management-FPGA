@@ -74,8 +74,6 @@ BEGIN
 			wait for 10 ns;
 			enable <= '1';
 			wait for 10 ns;
-			enable <= '0';
-			wait for 10 ns;
 	end write_to;
 	
 	procedure read_from(
@@ -88,8 +86,7 @@ BEGIN
 			wait for 10 ns;
 			enable <= '1';
 			wait for 10 ns;
-			enable <= '0';
-			wait for 10 ns;
+			
 	end read_from;
 
 	
@@ -99,95 +96,52 @@ BEGIN
 
       -- insert stimulus here 
 
-		address <= "00010000"; --write 0xf0 to 0x10 
-		data_in <= "11110000";
-		rw <= '0';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
+
+		-- Testing environment setup phase
+		report "Starting testing environment setup";
+		write_to("00010000", "11110000"); --write 0xf0 to 0x10
 		enable <= '0';
-		wait for 10 ns;
+		write_to("00010001", "00001111"); --write 0x0f to 0x11
+		enable <= '0';
+		write_to("11110011", "11111111"); --write 0xff to 0xf3
+		enable <= '0';
+		report "Finished testing environment setup";
 		
-		address <= "00010001"; --write 0x0f to 0x11
-		data_in <= "00001111";
-		rw <= '0';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
+		-- Case Read from cache buffer with hit
+		read_from("00010000"); --read 0x10
+		assert data_out = "11110000" report "Case Read from cache buffer with hit failed expected '11110000'";
 		enable <= '0';
-		wait for 10 ns;
+
+		-- Case Read from cache buffer with hit 2
+		read_from("00010001"); --read 0x11
+		assert data_out = "00001111" report "Case Read from cache buffer with hit 2 failed expected '00001111'";
+		enable <= '0';
 		
-		address <= "11110011"; --write 0xff to 0xf3
-		data_in <= "11111111";
-		rw <= '0';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
+		-- Case Read from cache buffer with miss
+		read_from("11111111"); --read 0xff (miss)
+		assert hit_miss = '1' report "Case Read from cache buffer with miss failed expected '1'";
 		enable <= '0';
-		wait for 10 ns;
+
+		-- Case Read from cache buffer with hit 2
+		read_from("11110011"); --read 0xf3
+		assert data_out = "11111111" report "Case Read from cache buffer with hit 3 failed expected '11111111'";
+		enable <= '0';
 		
-		address <= "00010000"; --read 0x10
-		data_in <= "00000000";
-		rw <= '1';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
+		-- Setting up for way test
+		write_to("11110111", "10101010"); --write 0xaa to 0xf7
 		enable <= '0';
-		wait for 10 ns;
 		
-		address <= "00010001"; --read 0x11
-		data_in <= "00000000";
-		rw <= '1';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
+		-- Case Read from cache buffer from way1
+		read_from("11110011"); --read 0xf3
+		assert data_out = "11111111" report "Case Read from cache buffer from way1 failed expected '11111111'";
 		enable <= '0';
-		wait for 10 ns;
 		
-		address <= "11111111"; --red 0xff (miss)
-		data_in <= "00000000";
-		rw <= '1';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
+		-- Case Read from cache buffer from way0
+		read_from("11110111"); --read 0xf7
+		assert data_out = "10101010" report "Case Read from cache buffer from way0 failed expected '10101010'";
 		enable <= '0';
-		wait for 10 ns;
-		
-		address <= "11110011"; --read 0xf3
-		data_in <= "00000000";
-		rw <= '1';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
-		
-		address <= "11110111"; --write 0xaa to 0xf7
-		data_in <= "10101010";
-		rw <= '0';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
-		
-		address <= "11110011"; --read 0xf3
-		data_in <= "00000000";
-		rw <= '1';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
-		
-		address <= "11110111"; --read 0xf7
-		data_in <= "00000000";
-		rw <= '1';
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
+
+		report "Finished running all unit tests";
 
       wait;
    end process;

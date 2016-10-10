@@ -95,6 +95,28 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
+	
+	procedure write_to(
+		ADDR : in unsigned(7 downto 0);
+		DATA : in std_logic_vector(7 downto 0) ) is
+	begin			
+		address_in <= ADDR;
+		data_in <= DATA;
+		operation <= "010";
+		wait for 10 ns;
+		operation <= "000";
+		wait for 10 ns;
+	end write_to;
+	
+	procedure read_from(
+		ADDR_IN : in unsigned(7 downto 0) ) is
+	begin
+		address_in <= ADDR_IN;
+		data_in <= "00000000";
+		operation <= "001";
+		wait for 10 ns;	
+	end read_from;
+	
    begin		
       -- hold reset state for 100 ns.
       wait for 100 ns;	
@@ -103,60 +125,36 @@ BEGIN
 
       -- insert stimulus here 
 		
-		-- Start the testbench
+		-- Testing environment setup phase
+		-- Initialise the cache manager
 		operation <= "100";
 		wait for 10 ns;	
-
--- Unit test enivronment setup
-		address_in <= "00000001"; --write data into first line of cache for hit test
-		data_in <= "00101010";
-		operation <= "010";
 		
-		wait for 10 ns;
-
-		address_in <= "00010001"; --write data into second line for miss test
-		data_in <= "00101000";
-		operation <= "010";
-		
-		wait for 10 ns;
-		
-		address_in <= "00010111"; --write data into second line so previous write is no longer cached.
-		data_in <= "00101001";
-		operation <= "010";
-		
-		wait for 10 ns;		
-
-		operation <= "000";
-		wait for 10 ns;		
--- Case: Cache read hit 
-
-
-		address_in <= "00000001";
-		data_in <= "00000000";
-		operation <= "001";
+		report "Starting testing environment setup";
+		write_to("00000001","00101010"); --write data into first line of cache for hit test
+		write_to("00010001","00101000"); --write data into second line for miss test
+		write_to("00010111","00101001"); --write data into second line so previous write is no longer cached.
+				
+-- Case: Cache read hit // TODO: Investigate this failing
+		read_from("00000001");
 		assert data_out = "00101010" report "Case: Cache read hit error: expected 00101010";
-		
-		wait for 10 ns;
-		
 		operation <= "000";
-
-		wait for 10 ns;
+		wait for 10 ns;	
 
 -- Case: Cache miss prompts read from main memory
-		address_in <= "00010001";
-		data_in <= "00000000";
-		operation <= "001";
+		read_from("00010001");
 		assert data_out = "00101000" report "Case: Cache miss prompts read from main memory error: expected 00101000";
-		
-		wait for 10 ns;
+		operation <= "000";
+		wait for 10 ns;	
 
 -- Case: Cache miss prompts cache write
-		address_in <= "00010001";
-		data_in <= "00000000";
-		operation <= "001";
-assert data_out = "00101000" report "Case: Cache read hit error: expected 00101000";
+		read_from("00010001");
+		assert data_out = "00101000" report "Case: Cache read hit error: expected 00101000";
 --assert hit_miss_signal = '0' report "Case: Cache read hit error: expected 0";
+		operation <= "000";
+		wait for 10 ns;	
 
+report "Finished running all unit tests";
       wait;
    end process;
 

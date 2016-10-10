@@ -33,11 +33,11 @@ use ieee.std_logic_unsigned.all;
 
 entity cache_ram_two_way is
 	port(
-	clk, enable : in std_logic; 
+	clk : in std_logic; 
 	address: in unsigned(7 downto 0);
 	data_in: in std_logic_vector(7 downto 0);
 	data_out: out std_logic_vector(7 downto 0);
-	rw: in std_ulogic;
+	enable, rw: in std_ulogic;
 	hit_miss: out std_ulogic := '0');
 end cache_ram_two_way;
 
@@ -65,7 +65,7 @@ architecture Behavioral of cache_ram_two_way is
 begin
 	process (clk)
 	begin
-		data_out <= (others => 'Z'); -- chip is not selected
+		--data_out <= (others => 'Z'); -- chip is not selected
 		cache_cell <= address(7 downto 4); --first half of address
 		tag_in <= address(3 downto 0); --second hald of address
 		

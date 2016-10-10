@@ -92,49 +92,64 @@ BEGIN
 
    -- Stimulus process
    stim_proc: process
+	
+		procedure write_to(
+		ADDR : in unsigned(7 downto 0);
+		DATA : in std_logic_vector(7 downto 0) ) is
+		begin
+			address <= ADDR;
+			data_in <= DATA;
+			rw <= '0';
+			
+			wait for 10 ns;
+			enable <= '1';
+			wait for 10 ns;
+			enable <= '0';
+			wait for 10 ns;
+	end write_to;
+	
+	procedure read_from(
+		ADDR_IN : in unsigned(7 downto 0) ) is
+		begin
+			address <= ADDR_IN;
+			data_in <= "00000000";
+			rw <= '1';
+			
+			wait for 10 ns;
+			enable <= '1';
+			wait for 10 ns;
+			enable <= '0';
+			wait for 10 ns;
+	end read_from;
+	
+	
    begin		
       -- hold reset state for 100 ns.
       wait for 10 ns;	
 
-
       -- insert stimulus here 
 		
-		address <= "00000001";
-		data_in <= "00001111";
-		rw <= '0';
 		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
-		
-		rw <= '0';
-		address <= "11111111";
-		data_in <= "11110000";
-		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
+		-- Testing environment setup phase
+		report "Starting testing environment setup";
+		write_to("00000001", "00001111");
+		write_to("11111111", "11110000");
+		report "Finished testing environment setup";
 
-		rw <= '1';
-		address <= "00000000";
+		-- Case Read from ram with miss
+		read_from("00000000");
+		-- need to check internal signals here
 		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
+		-- Case Read from ram with hit
+		read_from("00000001");
+		assert data_out = "00001111" report "Case Read from ram with hit failed expected '00001111'";
 		
-		address <= "00000001";
+		-- Case Read from ram with hit 2
+		read_from("11111111");
+		assert data_out = "11110000" report "Case Read from ram with hit 2 failed expected '11110000'";
 		
-		wait for 10 ns;
-		enable <= '1';
-		wait for 10 ns;
-		enable <= '0';
-		wait for 10 ns;
+		
+		report "Finished running all unit tests";
 
       wait;
    end process;

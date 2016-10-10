@@ -1,0 +1,10 @@
+Command line:
+   cache_system_two_way_tb_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49834
+
+Tue Oct 11 01:58:16 2016
+
+
+ Elaboration Time: 0.125 sec

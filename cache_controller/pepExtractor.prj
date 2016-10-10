@@ -1,1 +1,4 @@
+work	"cache_controller_frog.vhd"
 work	"cache_ram_two_way.vhd"
+work	"cache_system_two_way.vhd"
+work	"simple_ram.vhd"

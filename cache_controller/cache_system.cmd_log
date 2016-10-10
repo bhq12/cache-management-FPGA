@@ -18,3 +18,5 @@ ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl cache_system.ngc cache_system.ngd
 xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/cache_system.xst" -ofn "P:/cache-management-FPGA/cache_controller/cache_system.syr" 
 xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/cache_system.xst" -ofn "P:/cache-management-FPGA/cache_controller/cache_system.syr" 
 xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/cache_system.xst" -ofn "P:/cache-management-FPGA/cache_controller/cache_system.syr" 
+xst -intstyle ise -ifn "P:/My Documents/cache-management-FPGA/cache_controller/cache_system.xst" -ofn "P:/My Documents/cache-management-FPGA/cache_controller/cache_system.syr" 
+xst -intstyle ise -ifn "P:/My Documents/cache-management-FPGA/cache_controller/cache_system.xst" -ofn "P:/My Documents/cache-management-FPGA/cache_controller/cache_system.syr" 
