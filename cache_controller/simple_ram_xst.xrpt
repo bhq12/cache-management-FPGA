@@ -5,14 +5,14 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Oct 05 15:47:11 2016">
+  <application stringID="Xst" timeStamp="Mon Oct 10 13:29:24 2016">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
         <column stringID="value"/>
         <row stringID="row" value="0">
           <item stringID="variable" value="Path"/>
-          <item stringID="value" value="\\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\\lib\nt;\\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\\bin\nt;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\CooCox\CoIDE_V2Beta\gcc\bin;C:\CooCox\CoIDE_V2Beta\bin;C:\WINDOWS\CCM;C:\Program Files\TortoiseSVN\bin"/>
+          <item stringID="value" value="\\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\\lib\nt;\\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\\bin\nt;C:\ProgramData\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\CooCox\CoIDE_V2Beta\gcc\bin;C:\CooCox\CoIDE_V2Beta\bin;C:\Program Files\TortoiseSVN\bin;C:\Program Files (x86)\Atmel\sam-ba_2.15\drv\;C:\Program Files (x86)\Atmel\sam-ba_2.15;C:\Program Files (x86)\GDAL"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="variable" value="PATHEXT"/>
@@ -31,13 +31,13 @@
         <item stringID="User_EnvOsname" value="Microsoft "/>
         <item stringID="User_EnvOsrelease" value="Service Pack 1  (build 7601)"/>
       </item>
-      <item stringID="User_EnvHost" value="DSL19"/>
+      <item stringID="User_EnvHost" value="DSL05"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Core(TM) i7-3770 CPU @ 3.40GHz"/>
-          <item stringID="speed" value="3392 MHz"/>
+          <item stringID="arch" value="Intel(R) Core(TM) i7-2600 CPU @ 3.40GHz"/>
+          <item stringID="speed" value="3400 MHz"/>
         </row>
       </table>
     </section>
@@ -67,12 +67,16 @@
       <item DEFAULT="YES" label="-equivalent_register_removal" stringID="XST_EQUIVALENTREGISTERREMOVAL" value="YES"/>
     </section>
     <section stringID="XST_HDL_SYNTHESIS_REPORT">
-      <item dataType="int" stringID="XST_REGISTERS" value="257">
+      <item dataType="int" stringID="XST_REGISTERS" value="258">
+        <item dataType="int" stringID="XST_1BIT_REGISTER" value="1"/>
         <item dataType="int" stringID="XST_8BIT_REGISTER" value="257"/>
       </item>
       <item dataType="int" stringID="XST_MULTIPLEXERS" value="1"></item>
     </section>
     <section stringID="XST_ADVANCED_HDL_SYNTHESIS_REPORT">
+      <item dataType="int" stringID="XST_REGISTERS" value="1">
+        <item dataType="int" stringID="XST_FLIPFLOPS" value="1"/>
+      </item>
       <item dataType="int" stringID="XST_MULTIPLEXERS" value="1"></item>
     </section>
     <section stringID="XST_PARTITION_REPORT">
@@ -89,28 +93,29 @@
         <item stringID="XST_KEEP_HIERARCHY" value="Yes"/>
       </section>
       <section stringID="XST_DESIGN_STATISTICS">
-        <item stringID="XST_IOS" value="26"/>
+        <item stringID="XST_IOS" value="28"/>
       </section>
       <section stringID="XST_CELL_USAGE">
-        <item dataType="int" stringID="XST_BELS" value="20209">
+        <item dataType="int" stringID="XST_BELS" value="20210">
           <item dataType="int" stringID="XST_AND2" value="6246"/>
           <item dataType="int" stringID="XST_AND3" value="756"/>
           <item dataType="int" stringID="XST_AND4" value="3348"/>
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="9472"/>
+          <item dataType="int" stringID="XST_VCC" value="1"/>
         </item>
-        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="2056">
-          <item dataType="int" stringID="XST_FDCE" value="2056"/>
+        <item dataType="int" stringID="XST_FLIPFLOPSLATCHES" value="2057">
+          <item dataType="int" stringID="XST_FDCE" value="2057"/>
         </item>
-        <item dataType="int" stringID="XST_IO_BUFFERS" value="26">
+        <item dataType="int" stringID="XST_IO_BUFFERS" value="27">
           <item dataType="int" stringID="XST_IBUF" value="18"/>
-          <item dataType="int" stringID="XST_OBUF" value="8"/>
+          <item dataType="int" stringID="XST_OBUF" value="9"/>
         </item>
       </section>
     </section>
     <section stringID="XST_ERRORS_STATISTICS">
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_ERRORS" value="0"/>
-      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="2"/>
+      <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_WARNINGS" value="4"/>
       <item dataType="int" filtered="0" stringID="XST_NUMBER_OF_INFOS" value="0"/>
     </section>
   </application>

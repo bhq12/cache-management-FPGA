@@ -1,0 +1,10 @@
+vhdtdtfi -lib work bit4_counter.vhd -prj testProject -o bit4_counter.spl -module bit4_counter -template //maxwell/elecapp/Xilinx/12.4/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family xa9500xl bit4_counter.spl {P:/My Documents/cache-management-FPGA/testProject/bit4_counter.sym} 
+xst -intstyle ise -ifn "P:/My Documents/cache-management-FPGA/testProject/bit4_counter.xst" -ofn "P:/My Documents/cache-management-FPGA/testProject/bit4_counter.syr" 
+xst -intstyle ise -ifn "P:/My Documents/cache-management-FPGA/testProject/bit4_counter.xst" -ofn "P:/My Documents/cache-management-FPGA/testProject/bit4_counter.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl "bit4_counter.ngc" bit4_counter.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper bit4_counter.ngd 
+XSLTProcess bit4_counter_build.xml 
+tsim -intstyle ise bit4_counter bit4_counter.nga 
+hprep6 -s IEEE1149 -n bit4_counter -i bit4_counter 
+xst -intstyle ise -ifn "P:/My Documents/cache-management-FPGA/testProject/bit4_counter.xst" -ofn "P:/My Documents/cache-management-FPGA/testProject/bit4_counter.syr" 

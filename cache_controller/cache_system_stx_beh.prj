@@ -1,0 +1,4 @@
+vhdl isim_temp "simple_ram.vhd"
+vhdl isim_temp "cache_ram.vhd"
+vhdl isim_temp "cache_controller_frog.vhd"
+vhdl isim_temp "cache_system.vhd"

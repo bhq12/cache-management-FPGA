@@ -1,0 +1,4 @@
+vhdl work "simple_ram.vhd"
+vhdl work "cache_ram.vhd"
+vhdl work "cache_controller_frog.vhd"
+vhdl work "cache_system.vhd"

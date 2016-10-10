@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.86 secs
+Total CPU time to Xst completion: 0.62 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.86 secs
+Total CPU time to Xst completion: 0.63 secs
  
 --> Reading design: cache_ram.prj
 
@@ -75,10 +75,8 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//file/usersb$/bhq12/home/cache_controller/cache_ram.vhd" in Library work.
-Entity <cache_ram> compiled.
-WARNING:HDLParsers:1406 - "//file/usersb$/bhq12/home/cache_controller/cache_ram.vhd" Line 53. No sensitivity list and no wait in the process
-Entity <cache_ram> (Architecture <behavioral>) compiled.
+Compiling vhdl file "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd" in Library work.
+Architecture behavioral of Entity cache_ram is up to date.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
@@ -90,8 +88,8 @@ Analyzing hierarchy for entity <cache_ram> in library <work> (architecture <beha
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <cache_ram> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache_controller/cache_ram.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <enable>
+WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd" line 58: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <enable>, <address>, <rw>, <data_in>
 Entity <cache_ram> analyzed. Unit <cache_ram> generated.
 
 
@@ -102,17 +100,50 @@ Entity <cache_ram> analyzed. Unit <cache_ram> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <cache_ram>.
-    Related source file is "//file/usersb$/bhq12/home/cache_controller/cache_ram.vhd".
-WARNING:Xst:1306 - Output <output_ready> is never assigned.
-WARNING:Xst:647 - Input <address> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <data_in> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:647 - Input <rw> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1306 - Output <hit_miss> is never assigned.
-WARNING:Xst:647 - Input <enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
-WARNING:Xst:1780 - Signal <tag> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
-WARNING:Xst:1780 - Signal <cache> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Related source file is "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/cache_ram.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_11>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_12>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_13>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_14>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_15>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <cache_cell>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_1>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_2>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_3>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_4>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_5>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_6>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_7>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_8>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_9>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <tag_in>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <hit_miss>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_0>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 8-bit latch for signal <cache_10>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
     Found 8-bit tristate buffer for signal <data_out>.
+    Found 4-bit comparator not equal for signal <data_out$cmp_ne0000> created at line 64.
+    Found 8-bit 16-to-1 multiplexer for signal <data_out$mux0000> created at line 72.
+    Found 4-bit comparator equal for signal <hit_miss$cmp_eq0000> created at line 64.
+    Found 4-bit 16-to-1 multiplexer for signal <tag$mux0000> created at line 64.
     Summary:
+	inferred   2 Comparator(s).
 	inferred   8 Tristate(s).
 Unit <cache_ram> synthesized.
 
@@ -121,8 +152,18 @@ Unit <cache_ram> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Tristates                                            : 8
- 1-bit tristate buffer                                 : 8
+# Latches                                              : 35
+ 1-bit latch                                           : 1
+ 4-bit latch                                           : 18
+ 8-bit latch                                           : 16
+# Comparators                                          : 2
+ 4-bit comparator equal                                : 1
+ 4-bit comparator not equal                            : 1
+# Multiplexers                                         : 2
+ 4-bit 16-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 1
+# Tristates                                            : 1
+ 8-bit tristate buffer                                 : 1
 
 =========================================================================
 
@@ -134,7 +175,17 @@ Macro Statistics
 =========================================================================
 Advanced HDL Synthesis Report
 
-Found no macro
+Macro Statistics
+# Latches                                              : 35
+ 1-bit latch                                           : 1
+ 4-bit latch                                           : 18
+ 8-bit latch                                           : 16
+# Comparators                                          : 1
+ 4-bit comparator equal                                : 1
+# Multiplexers                                         : 2
+ 4-bit 16-to-1 multiplexer                             : 1
+ 8-bit 16-to-1 multiplexer                             : 1
+
 =========================================================================
 
 =========================================================================
@@ -173,21 +224,32 @@ Design Statistics
 # IOs                              : 28
 
 Cell Usage :
-# BELS                             : 1
-#      GND                         : 1
-# IO Buffers                       : 8
+# BELS                             : 1092
+#      AND2                        : 615
+#      AND4                        : 6
+#      INV                         : 236
+#      OR2                         : 204
+#      OR3                         : 1
+#      OR4                         : 1
+#      OR8                         : 25
+#      XOR2                        : 4
+# FlipFlops/Latches                : 201
+#      LD                          : 201
+# IO Buffers                       : 27
+#      IBUF                        : 18
+#      OBUF                        : 1
 #      OBUFE                       : 8
 =========================================================================
 
 
-Total REAL time to Xst completion: 4.00 secs
-Total CPU time to Xst completion: 3.79 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.29 secs
  
 --> 
 
-Total memory usage is 197904 kilobytes
+Total memory usage is 220168 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   10 (   0 filtered)
+Number of warnings :   37 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

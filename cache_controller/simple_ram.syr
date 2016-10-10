@@ -4,13 +4,13 @@ Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.91 secs
+Total CPU time to Xst completion: 0.72 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 1.00 secs
-Total CPU time to Xst completion: 0.91 secs
+Total CPU time to Xst completion: 0.72 secs
  
 --> Reading design: simple_ram.prj
 
@@ -75,9 +75,8 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "//file/usersb$/bhq12/home/cache_controller/simple_ram.vhd" in Library work.
+Compiling vhdl file "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd" in Library work.
 Entity <simple_ram> compiled.
-WARNING:HDLParsers:1406 - "//file/usersb$/bhq12/home/cache_controller/simple_ram.vhd" Line 47. No sensitivity list and no wait in the process
 Entity <simple_ram> (Architecture <behavioral>) compiled.
 
 =========================================================================
@@ -90,7 +89,7 @@ Analyzing hierarchy for entity <simple_ram> in library <work> (architecture <beh
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <simple_ram> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache_controller/simple_ram.vhd" line 50: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+WARNING:Xst:819 - "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd" line 52: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <enable>
 Entity <simple_ram> analyzed. Unit <simple_ram> generated.
 
@@ -102,10 +101,14 @@ Entity <simple_ram> analyzed. Unit <simple_ram> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <simple_ram>.
-    Related source file is "//file/usersb$/bhq12/home/cache_controller/simple_ram.vhd".
+    Related source file is "//file/usersb$/bhq12/home/cache-management-FPGA/cache_controller/simple_ram.vhd".
+WARNING:Xst:647 - Input <clk> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
     Found 8-bit register for signal <data_out>.
-    Found 8-bit 256-to-1 multiplexer for signal <data_out$mux0000> created at line 56.
+    Found 1-bit register for signal <write_to_cache>.
+    Found 8-bit 256-to-1 multiplexer for signal <data_out$mux0000> created at line 58.
     Found 2048-bit register for signal <ram1>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
 Unit <simple_ram> synthesized.
 
 
@@ -113,7 +116,8 @@ Unit <simple_ram> synthesized.
 HDL Synthesis Report
 
 Macro Statistics
-# Registers                                            : 257
+# Registers                                            : 258
+ 1-bit register                                        : 1
  8-bit register                                        : 257
 # Multiplexers                                         : 1
  8-bit 256-to-1 multiplexer                            : 1
@@ -124,11 +128,15 @@ Macro Statistics
 *                       Advanced HDL Synthesis                          *
 =========================================================================
 
+WARNING:Xst:1426 - The value init of the FF/Latch 0 hinder the constant cleaning in the block write_to_cache.
+   You should achieve better results by setting this init to 1.
 
 =========================================================================
 Advanced HDL Synthesis Report
 
 Macro Statistics
+# Registers                                            : 1
+ Flip-Flops                                            : 1
 # Multiplexers                                         : 1
  8-bit 256-to-1 multiplexer                            : 1
 
@@ -137,6 +145,8 @@ Macro Statistics
 =========================================================================
 *                         Low Level Synthesis                           *
 =========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch write_to_cache hinder the constant cleaning in the block simple_ram.
+   You should achieve better results by setting this init to 1.
 
 Optimizing unit <simple_ram> ...
   implementation constraint: INIT=r	 : ram1_10_7
@@ -395,6 +405,7 @@ Optimizing unit <simple_ram> ...
   implementation constraint: INIT=r	 : ram1_7_7
   implementation constraint: INIT=r	 : ram1_8_7
   implementation constraint: INIT=r	 : ram1_9_7
+  implementation constraint: INIT=r	 : write_to_cache
   implementation constraint: INIT=r	 : ram1_9_0
   implementation constraint: INIT=r	 : ram1_9_1
   implementation constraint: INIT=r	 : ram1_9_2
@@ -2215,10 +2226,10 @@ Clock Enable                       : YES
 wysiwyg                            : NO
 
 Design Statistics
-# IOs                              : 26
+# IOs                              : 28
 
 Cell Usage :
-# BELS                             : 20209
+# BELS                             : 20210
 #      AND2                        : 6246
 #      AND3                        : 756
 #      AND4                        : 3348
@@ -2227,22 +2238,23 @@ Cell Usage :
 #      INV                         : 9472
 #      OR4                         : 8
 #      OR8                         : 288
-# FlipFlops/Latches                : 2056
-#      FDCE                        : 2056
-# IO Buffers                       : 26
+#      VCC                         : 1
+# FlipFlops/Latches                : 2057
+#      FDCE                        : 2057
+# IO Buffers                       : 27
 #      IBUF                        : 18
-#      OBUF                        : 8
+#      OBUF                        : 9
 =========================================================================
 
 
-Total REAL time to Xst completion: 24.00 secs
-Total CPU time to Xst completion: 23.98 secs
+Total REAL time to Xst completion: 28.00 secs
+Total CPU time to Xst completion: 28.16 secs
  
 --> 
 
-Total memory usage is 365648 kilobytes
+Total memory usage is 365704 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
 Number of infos    :    0 (   0 filtered)
 

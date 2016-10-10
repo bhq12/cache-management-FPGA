@@ -1,0 +1,11 @@
+Release 12.4 ngdbuild M.81d (nt)
+Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.
+
+Command Line:
+\\maxwell\elecapp\Xilinx\12.4\ISE_DS\ISE\bin\nt\unwrapped\ngdbuild.exe -intstyle
+ise -dd _ngo -i -p xa9500xl cache_system.ngc cache_system.ngd
+
+Reading NGO file "P:/cache-management-FPGA/cache_controller/cache_system.ngc"
+...
+Gathering constraint information from source properties...
+Done.

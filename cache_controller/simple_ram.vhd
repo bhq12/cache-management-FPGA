@@ -33,9 +33,11 @@ use ieee.std_logic_arith.all;
 --code modified from http://people.sabanciuniv.edu/erkays/el310/MemoryModels.pdf
 
 entity simple_ram is
-	port(address: in unsigned(7 downto 0);
+	port(clk : in std_logic; 
+	address: in unsigned(7 downto 0);
 	data_in: in std_logic_vector(7 downto 0);
 	data_out : out std_logic_vector(7 downto 0);
+	write_to_cache: out std_ulogic := '0';
 	enable, rw: in std_ulogic);
 end simple_ram;
 
@@ -44,19 +46,21 @@ architecture Behavioral of simple_ram is
 		std_logic_vector(7 downto 0);
 	signal ram1: ram_type:= (others => (others => '0'));
 begin
-	process
+	process(clk)
 	begin
 		--data_out <= (others => 'Z'); -- chip is not selected
-		if (rising_edge(enable)) then
+		if enable = '1' then
 			if rw = '0' then -- write
 				ram1(conv_integer(address)) <= data_in;
 				--wait for 0 ns;
 			end if;
 			if rw = '1' then -- read
 				data_out <= ram1(conv_integer(address));
+				write_to_cache <= '1';
 				--wait for 0 ns;
 			end if;
 		else
+	
 			--data_out <= (others => '0');
 		end if;
 	--wait on enable, rw, address;

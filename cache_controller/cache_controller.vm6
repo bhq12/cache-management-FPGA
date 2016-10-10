@@ -1,0 +1,1981 @@
+NDS Database:  version M.81d
+
+NDS_INFO | xa9500xl | A9572XL100 | XA9572XL-15-TQ100
+
+DEVICE | A9572XL | A9572XL100 | 
+
+NETWORK | cache_controller | 0 | 0 | 16793607
+
+INPUT_INSTANCE | 0 | 0 | NULL | read_ready_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | read_ready | 3076 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_0_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<0> | 3080 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_0_IBUF | 2999 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_0_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_0_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<0> | 3096 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_0_IBUF | 3015 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_0_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | data_to_device_0 | cache_controller_COPY_0_COPY_0 | 2155872275 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_0_IBUF | 2999 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_0 | 2975 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_0.Q | data_to_device_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_0_IBUF | 3015 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_0$Q | 2974 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_0.Q | data_to_device_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_0 | 2975 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_0.Q | data_to_device_0 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_0.SI | data_to_device_0 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_0_IBUF | 2999 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_0 | 2975 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_0.Q | data_to_device_0 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_0_IBUF | 3015 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_0.D1 | 3105 | ? | 0 | 4096 | data_to_device_0 | NULL | NULL | data_to_device_0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_0.D2 | 3106 | ? | 0 | 4096 | data_to_device_0 | NULL | NULL | data_to_device_0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_0_IBUF
+SPPTERM | 3 | IV_TRUE | data_to_device_0 | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+SPPTERM | 3 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_0_IBUF | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | data_to_device_0.REG | data_to_device_0 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_0.D | 3104 | ? | 0 | 0 | data_to_device_0 | NULL | NULL | data_to_device_0.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_0.Q | 3107 | ? | 0 | 0 | data_to_device_0 | NULL | NULL | data_to_device_0.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_1_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<1> | 3081 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_1_IBUF | 3000 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_1_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<1> | 3097 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_1_IBUF | 3016 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | data_to_device_1 | cache_controller_COPY_0_COPY_0 | 2155872275 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_1_IBUF | 3000 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_1 | 2977 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_1.Q | data_to_device_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_1_IBUF | 3016 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_1$Q | 2976 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_1.Q | data_to_device_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_1 | 2977 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_1.Q | data_to_device_1 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_1.SI | data_to_device_1 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_1_IBUF | 3000 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_1 | 2977 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_1.Q | data_to_device_1 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_1_IBUF | 3016 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_1.D1 | 3109 | ? | 0 | 4096 | data_to_device_1 | NULL | NULL | data_to_device_1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_1.D2 | 3110 | ? | 0 | 4096 | data_to_device_1 | NULL | NULL | data_to_device_1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_1_IBUF
+SPPTERM | 3 | IV_TRUE | data_to_device_1 | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+SPPTERM | 3 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_1_IBUF | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | data_to_device_1.REG | data_to_device_1 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_1.D | 3108 | ? | 0 | 0 | data_to_device_1 | NULL | NULL | data_to_device_1.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_1.Q | 3111 | ? | 0 | 0 | data_to_device_1 | NULL | NULL | data_to_device_1.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_2_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<2> | 3082 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_2_IBUF | 3001 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_2_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<2> | 3098 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_2_IBUF | 3017 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_2_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | data_to_device_2 | cache_controller_COPY_0_COPY_0 | 2155872275 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_2_IBUF | 3001 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_2 | 2979 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_2.Q | data_to_device_2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_2_IBUF | 3017 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_2$Q | 2978 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_2.Q | data_to_device_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_2 | 2979 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_2.Q | data_to_device_2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_2.SI | data_to_device_2 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_2_IBUF | 3001 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_2 | 2979 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_2.Q | data_to_device_2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_2_IBUF | 3017 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_2.D1 | 3113 | ? | 0 | 4096 | data_to_device_2 | NULL | NULL | data_to_device_2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_2.D2 | 3114 | ? | 0 | 4096 | data_to_device_2 | NULL | NULL | data_to_device_2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_2_IBUF
+SPPTERM | 3 | IV_TRUE | data_to_device_2 | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+SPPTERM | 3 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_2_IBUF | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | data_to_device_2.REG | data_to_device_2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_2.D | 3112 | ? | 0 | 0 | data_to_device_2 | NULL | NULL | data_to_device_2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_2.Q | 3115 | ? | 0 | 0 | data_to_device_2 | NULL | NULL | data_to_device_2.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_3_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<3> | 3083 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_3_IBUF | 3002 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_3_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_3_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<3> | 3099 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_3_IBUF | 3018 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_3_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | data_to_device_3 | cache_controller_COPY_0_COPY_0 | 2155872275 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_3_IBUF | 3002 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_3 | 2981 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_3.Q | data_to_device_3 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_3_IBUF | 3018 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_3$Q | 2980 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_3.Q | data_to_device_3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_3 | 2981 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_3.Q | data_to_device_3 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_3.SI | data_to_device_3 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_3_IBUF | 3002 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_3_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_3 | 2981 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_3.Q | data_to_device_3 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_3_IBUF | 3018 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_3.D1 | 3117 | ? | 0 | 4096 | data_to_device_3 | NULL | NULL | data_to_device_3.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_3.D2 | 3118 | ? | 0 | 4096 | data_to_device_3 | NULL | NULL | data_to_device_3.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_3_IBUF
+SPPTERM | 3 | IV_TRUE | data_to_device_3 | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+SPPTERM | 3 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_3_IBUF | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | data_to_device_3.REG | data_to_device_3 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_3.D | 3116 | ? | 0 | 0 | data_to_device_3 | NULL | NULL | data_to_device_3.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_3.Q | 3119 | ? | 0 | 0 | data_to_device_3 | NULL | NULL | data_to_device_3.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_4_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<4> | 3084 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_4_IBUF | 3003 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_4_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_4_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<4> | 3100 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_4_IBUF | 3019 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_4_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | data_to_device_4 | cache_controller_COPY_0_COPY_0 | 2155872275 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_4_IBUF | 3003 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_4 | 2983 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_4.Q | data_to_device_4 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_4_IBUF | 3019 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_4$Q | 2982 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_4.Q | data_to_device_4 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_4 | 2983 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_4.Q | data_to_device_4 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_4.SI | data_to_device_4 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_4_IBUF | 3003 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_4_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_4 | 2983 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_4.Q | data_to_device_4 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_4_IBUF | 3019 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_4.D1 | 3121 | ? | 0 | 4096 | data_to_device_4 | NULL | NULL | data_to_device_4.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_4.D2 | 3122 | ? | 0 | 4096 | data_to_device_4 | NULL | NULL | data_to_device_4.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_4_IBUF
+SPPTERM | 3 | IV_TRUE | data_to_device_4 | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+SPPTERM | 3 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_4_IBUF | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | data_to_device_4.REG | data_to_device_4 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_4.D | 3120 | ? | 0 | 0 | data_to_device_4 | NULL | NULL | data_to_device_4.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_4.Q | 3123 | ? | 0 | 0 | data_to_device_4 | NULL | NULL | data_to_device_4.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_5_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<5> | 3085 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_5_IBUF | 3004 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_5_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_5_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<5> | 3101 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_5_IBUF | 3020 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_5_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | data_to_device_5 | cache_controller_COPY_0_COPY_0 | 2155872275 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_5_IBUF | 3004 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_5 | 2985 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_5.Q | data_to_device_5 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_5_IBUF | 3020 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_5$Q | 2984 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_5.Q | data_to_device_5 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_5 | 2985 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_5.Q | data_to_device_5 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_5.SI | data_to_device_5 | 0 | 5 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_5_IBUF | 3004 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_5_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_5 | 2985 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_5.Q | data_to_device_5 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_5_IBUF | 3020 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_5.D1 | 3125 | ? | 0 | 4096 | data_to_device_5 | NULL | NULL | data_to_device_5.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_5.D2 | 3126 | ? | 0 | 4096 | data_to_device_5 | NULL | NULL | data_to_device_5.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_5_IBUF
+SPPTERM | 3 | IV_TRUE | data_to_device_5 | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+SPPTERM | 3 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_5_IBUF | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | data_to_device_5.REG | data_to_device_5 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_5.D | 3124 | ? | 0 | 0 | data_to_device_5 | NULL | NULL | data_to_device_5.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_5.Q | 3127 | ? | 0 | 0 | data_to_device_5 | NULL | NULL | data_to_device_5.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_6_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<6> | 3086 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+Inv+OptxMapped | data_to_device_6 | cache_controller_COPY_0_COPY_0 | 2155872531 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_6 | 2987 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6.Q | data_to_device_6 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM | 3068 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.Q | data_to_device_6__and0001/data_to_device_6__and0001_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.UIM | 3069 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.Q | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.UIM | 3070 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.Q | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_6$Q | 2986 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6.Q | data_to_device_6 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_6 | 2987 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6.Q | data_to_device_6 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_6.SI | data_to_device_6 | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_6 | 2987 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6.Q | data_to_device_6 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM | 3068 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.Q | data_to_device_6__and0001/data_to_device_6__and0001_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.UIM | 3069 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.Q | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.UIM | 3070 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.Q | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_6.D1 | 3129 | ? | 0 | 4096 | data_to_device_6 | NULL | NULL | data_to_device_6.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_6.D2 | 3130 | ? | 0 | 4096 | data_to_device_6 | NULL | NULL | data_to_device_6.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_FALSE | data_from_device_6_IBUF
+SPPTERM | 3 | IV_FALSE | data_to_device_6 | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | IV_FALSE | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM
+SPPTERM | 4 | IV_FALSE | data_to_device_6 | IV_FALSE | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM | IV_FALSE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.UIM | IV_FALSE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.UIM
+SPPTERM | 4 | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | IV_FALSE | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM | IV_FALSE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.UIM | IV_FALSE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.UIM
+
+SRFF_INSTANCE | data_to_device_6.REG | data_to_device_6 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_6.D | 3128 | ? | 0 | 0 | data_to_device_6 | NULL | NULL | data_to_device_6.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_6.Q | 3131 | ? | 0 | 0 | data_to_device_6 | NULL | NULL | data_to_device_6.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_from_device_7_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_from_device<7> | 3087 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+Inv+OptxMapped | data_to_device_7 | cache_controller_COPY_0_COPY_0 | 2155872531 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_7 | 2989 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7.Q | data_to_device_7 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM | 3071 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.Q | data_to_device_7__and0001/data_to_device_7__and0001_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.UIM | 3072 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.Q | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.UIM | 3073 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.Q | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_to_device_7$Q | 2988 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7.Q | data_to_device_7 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_7 | 2989 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7.Q | data_to_device_7 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_7.SI | data_to_device_7 | 0 | 7 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_7 | 2989 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7.Q | data_to_device_7 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM | 3071 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.Q | data_to_device_7__and0001/data_to_device_7__and0001_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.UIM | 3072 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.Q | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.UIM | 3073 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.Q | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_7.D1 | 3133 | ? | 0 | 4096 | data_to_device_7 | NULL | NULL | data_to_device_7.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_7.D2 | 3134 | ? | 0 | 4096 | data_to_device_7 | NULL | NULL | data_to_device_7.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_FALSE | data_from_device_7_IBUF
+SPPTERM | 3 | IV_FALSE | data_to_device_7 | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | IV_FALSE | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM
+SPPTERM | 4 | IV_FALSE | data_to_device_7 | IV_FALSE | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM | IV_FALSE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.UIM | IV_FALSE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.UIM
+SPPTERM | 4 | IV_TRUE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | IV_FALSE | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM | IV_FALSE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.UIM | IV_FALSE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.UIM
+
+SRFF_INSTANCE | data_to_device_7.REG | data_to_device_7 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_7.D | 3132 | ? | 0 | 0 | data_to_device_7 | NULL | NULL | data_to_device_7.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_7.Q | 3135 | ? | 0 | 0 | data_to_device_7 | NULL | NULL | data_to_device_7.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | hm_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | hm | 3079 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | hm_IBUF | 2998 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | hm_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+Inv+OptxMapped | ec_OBUF | cache_controller_COPY_0_COPY_0 | 2155872531 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hm_IBUF | 2998 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | hm_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_OBUF | 2991 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | ec_OBUF.Q | ec_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | ec_OBUF$Q | 2990 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | ec_OBUF.Q | ec_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ec_OBUF | 2991 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | ec_OBUF.Q | ec_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ec_OBUF.SI | ec_OBUF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hm_IBUF | 2998 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | hm_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_OBUF | 2991 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | ec_OBUF.Q | ec_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ec_OBUF.D1 | 3137 | ? | 0 | 4096 | ec_OBUF | NULL | NULL | ec_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ec_OBUF.D2 | 3138 | ? | 0 | 4096 | ec_OBUF | NULL | NULL | ec_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | read_ready_IBUF | IV_TRUE | hm_IBUF
+SPPTERM | 3 | IV_FALSE | ec_OBUF | IV_FALSE | read_ready_IBUF | IV_FALSE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM
+
+SRFF_INSTANCE | ec_OBUF.REG | ec_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ec_OBUF.D | 3136 | ? | 0 | 0 | ec_OBUF | NULL | NULL | ec_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ec_OBUF.Q | 3139 | ? | 0 | 0 | ec_OBUF | NULL | NULL | ec_OBUF.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | operation_0_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | operation<0> | 3075 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | operation_2_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | operation<2> | 3077 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | operation_1_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | operation<1> | 3078 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+NoMin+NoOpt+OptxMapped | em_OBUF | cache_controller_COPY_0_COPY_0 | 2155872275 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | em_OBUF | 2997 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | em_OBUF.Q | em_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hm_IBUF | 2998 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | hm_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | em_OBUF$Q | 2996 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | em_OBUF.Q | em_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | em_OBUF | 2997 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | em_OBUF.Q | em_OBUF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | em_OBUF.SI | em_OBUF | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | em_OBUF | 2997 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | em_OBUF.Q | em_OBUF | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | hm_IBUF | 2998 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | hm_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | em_OBUF.D1 | 3141 | ? | 0 | 4096 | em_OBUF | NULL | NULL | em_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | em_OBUF.D2 | 3142 | ? | 0 | 4096 | em_OBUF | NULL | NULL | em_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | read_ready_IBUF | IV_TRUE | em_OBUF
+SPPTERM | 2 | IV_FALSE | read_ready_IBUF | IV_TRUE | hm_IBUF
+
+SRFF_INSTANCE | em_OBUF.REG | em_OBUF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | em_OBUF.D | 3140 | ? | 0 | 0 | em_OBUF | NULL | NULL | em_OBUF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | em_OBUF.Q | 3143 | ? | 0 | 0 | em_OBUF | NULL | NULL | em_OBUF.REG | 0 | 8 | SRFF_Q
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_0_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<0> | 3088 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_0_IBUF | 3007 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_0_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_1_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<1> | 3089 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_1_IBUF | 3008 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_1_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_2_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<2> | 3090 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_2_IBUF | 3009 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_2_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_3_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<3> | 3091 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_3_IBUF | 3010 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_3_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_4_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<4> | 3092 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_4_IBUF | 3011 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_4_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_5_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<5> | 3093 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_5_IBUF | 3012 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_5_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_6_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<6> | 3094 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_6_IBUF | 3013 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_6_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | address_in_7_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | address_in<7> | 3095 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | address_in_7_IBUF | 3014 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_7_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_6_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<6> | 3102 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_6_IBUF | 3021 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_6_IBUF | 0 | 5 | II_IMUX
+
+INPUT_INSTANCE | 0 | 0 | NULL | data_in_7_IBUF | cache_controller_COPY_0_COPY_0 | 16 | 1 | 1
+INPUT_NODE_TYPE | 0 | 5 | II_IN
+NODE | data_in<7> | 3103 | PI | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
+NODE | data_in_7_IBUF | 3022 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_7_IBUF | 0 | 5 | II_IMUX
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_0 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_0_IBUF | 3007 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_0 | 3023 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_0.Q | address_out_0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_0.SI | address_out_0 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_0_IBUF | 3007 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_0.D1 | 3145 | ? | 0 | 4096 | address_out_0 | NULL | NULL | address_out_0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_0.D2 | 3146 | ? | 0 | 6144 | address_out_0 | NULL | NULL | address_out_0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_0.CLKF | 3147 | ? | 0 | 6144 | address_out_0 | NULL | NULL | address_out_0.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_0.SETF | 3148 | ? | 0 | 4096 | address_out_0 | NULL | NULL | address_out_0.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_0_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_0.RSTF | 3149 | ? | 0 | 4096 | address_out_0 | NULL | NULL | address_out_0.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_0_IBUF
+
+SRFF_INSTANCE | address_out_0.REG | address_out_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_0.D | 3144 | ? | 0 | 0 | address_out_0 | NULL | NULL | address_out_0.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_0.CLKF | 3147 | ? | 0 | 6144 | address_out_0 | NULL | NULL | address_out_0.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_0.SETF | 3148 | ? | 0 | 4096 | address_out_0 | NULL | NULL | address_out_0.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_0_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_0.RSTF | 3149 | ? | 0 | 4096 | address_out_0 | NULL | NULL | address_out_0.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_0_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_0.Q | 3150 | ? | 0 | 0 | address_out_0 | NULL | NULL | address_out_0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_1 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_1_IBUF | 3008 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_1 | 3024 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_1.Q | address_out_1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_1.SI | address_out_1 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_1_IBUF | 3008 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_1.D1 | 3152 | ? | 0 | 4096 | address_out_1 | NULL | NULL | address_out_1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_1.D2 | 3153 | ? | 0 | 6144 | address_out_1 | NULL | NULL | address_out_1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_1.CLKF | 3154 | ? | 0 | 6144 | address_out_1 | NULL | NULL | address_out_1.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_1.SETF | 3155 | ? | 0 | 4096 | address_out_1 | NULL | NULL | address_out_1.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_1_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_1.RSTF | 3156 | ? | 0 | 4096 | address_out_1 | NULL | NULL | address_out_1.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_1_IBUF
+
+SRFF_INSTANCE | address_out_1.REG | address_out_1 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_1.D | 3151 | ? | 0 | 0 | address_out_1 | NULL | NULL | address_out_1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_1.CLKF | 3154 | ? | 0 | 6144 | address_out_1 | NULL | NULL | address_out_1.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_1.SETF | 3155 | ? | 0 | 4096 | address_out_1 | NULL | NULL | address_out_1.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_1_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_1.RSTF | 3156 | ? | 0 | 4096 | address_out_1 | NULL | NULL | address_out_1.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_1_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_1.Q | 3157 | ? | 0 | 0 | address_out_1 | NULL | NULL | address_out_1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_2 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_2_IBUF | 3009 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_2 | 3025 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_2.Q | address_out_2 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_2.SI | address_out_2 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_2_IBUF | 3009 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_2.D1 | 3159 | ? | 0 | 4096 | address_out_2 | NULL | NULL | address_out_2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_2.D2 | 3160 | ? | 0 | 6144 | address_out_2 | NULL | NULL | address_out_2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_2.CLKF | 3161 | ? | 0 | 6144 | address_out_2 | NULL | NULL | address_out_2.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_2.SETF | 3162 | ? | 0 | 4096 | address_out_2 | NULL | NULL | address_out_2.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_2_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_2.RSTF | 3163 | ? | 0 | 4096 | address_out_2 | NULL | NULL | address_out_2.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_2_IBUF
+
+SRFF_INSTANCE | address_out_2.REG | address_out_2 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_2.D | 3158 | ? | 0 | 0 | address_out_2 | NULL | NULL | address_out_2.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_2.CLKF | 3161 | ? | 0 | 6144 | address_out_2 | NULL | NULL | address_out_2.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_2.SETF | 3162 | ? | 0 | 4096 | address_out_2 | NULL | NULL | address_out_2.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_2_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_2.RSTF | 3163 | ? | 0 | 4096 | address_out_2 | NULL | NULL | address_out_2.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_2_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_2.Q | 3164 | ? | 0 | 0 | address_out_2 | NULL | NULL | address_out_2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_3 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_3_IBUF | 3010 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_3 | 3026 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_3.Q | address_out_3 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_3.SI | address_out_3 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_3_IBUF | 3010 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_3.D1 | 3166 | ? | 0 | 4096 | address_out_3 | NULL | NULL | address_out_3.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_3.D2 | 3167 | ? | 0 | 6144 | address_out_3 | NULL | NULL | address_out_3.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_3.CLKF | 3168 | ? | 0 | 6144 | address_out_3 | NULL | NULL | address_out_3.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_3.SETF | 3169 | ? | 0 | 4096 | address_out_3 | NULL | NULL | address_out_3.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_3_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_3.RSTF | 3170 | ? | 0 | 4096 | address_out_3 | NULL | NULL | address_out_3.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_3_IBUF
+
+SRFF_INSTANCE | address_out_3.REG | address_out_3 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_3.D | 3165 | ? | 0 | 0 | address_out_3 | NULL | NULL | address_out_3.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_3.CLKF | 3168 | ? | 0 | 6144 | address_out_3 | NULL | NULL | address_out_3.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_3.SETF | 3169 | ? | 0 | 4096 | address_out_3 | NULL | NULL | address_out_3.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_3_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_3.RSTF | 3170 | ? | 0 | 4096 | address_out_3 | NULL | NULL | address_out_3.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_3_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_3.Q | 3171 | ? | 0 | 0 | address_out_3 | NULL | NULL | address_out_3.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_4 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_4_IBUF | 3011 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_4 | 3027 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_4.Q | address_out_4 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_4.SI | address_out_4 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_4_IBUF | 3011 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_4.D1 | 3173 | ? | 0 | 4096 | address_out_4 | NULL | NULL | address_out_4.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_4.D2 | 3174 | ? | 0 | 6144 | address_out_4 | NULL | NULL | address_out_4.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_4.CLKF | 3175 | ? | 0 | 6144 | address_out_4 | NULL | NULL | address_out_4.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_4.SETF | 3176 | ? | 0 | 4096 | address_out_4 | NULL | NULL | address_out_4.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_4_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_4.RSTF | 3177 | ? | 0 | 4096 | address_out_4 | NULL | NULL | address_out_4.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_4_IBUF
+
+SRFF_INSTANCE | address_out_4.REG | address_out_4 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_4.D | 3172 | ? | 0 | 0 | address_out_4 | NULL | NULL | address_out_4.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_4.CLKF | 3175 | ? | 0 | 6144 | address_out_4 | NULL | NULL | address_out_4.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_4.SETF | 3176 | ? | 0 | 4096 | address_out_4 | NULL | NULL | address_out_4.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_4_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_4.RSTF | 3177 | ? | 0 | 4096 | address_out_4 | NULL | NULL | address_out_4.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_4_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_4.Q | 3178 | ? | 0 | 0 | address_out_4 | NULL | NULL | address_out_4.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_5 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_5_IBUF | 3012 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_5 | 3028 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_5.Q | address_out_5 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_5.SI | address_out_5 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_5_IBUF | 3012 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_5.D1 | 3180 | ? | 0 | 4096 | address_out_5 | NULL | NULL | address_out_5.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_5.D2 | 3181 | ? | 0 | 6144 | address_out_5 | NULL | NULL | address_out_5.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_5.CLKF | 3182 | ? | 0 | 6144 | address_out_5 | NULL | NULL | address_out_5.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_5.SETF | 3183 | ? | 0 | 4096 | address_out_5 | NULL | NULL | address_out_5.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_5_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_5.RSTF | 3184 | ? | 0 | 4096 | address_out_5 | NULL | NULL | address_out_5.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_5_IBUF
+
+SRFF_INSTANCE | address_out_5.REG | address_out_5 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_5.D | 3179 | ? | 0 | 0 | address_out_5 | NULL | NULL | address_out_5.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_5.CLKF | 3182 | ? | 0 | 6144 | address_out_5 | NULL | NULL | address_out_5.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_5.SETF | 3183 | ? | 0 | 4096 | address_out_5 | NULL | NULL | address_out_5.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_5_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_5.RSTF | 3184 | ? | 0 | 4096 | address_out_5 | NULL | NULL | address_out_5.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_5_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_5.Q | 3185 | ? | 0 | 0 | address_out_5 | NULL | NULL | address_out_5.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_6 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_6_IBUF | 3013 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_6 | 3029 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_6.Q | address_out_6 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_6.SI | address_out_6 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_6_IBUF | 3013 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_6.D1 | 3187 | ? | 0 | 4096 | address_out_6 | NULL | NULL | address_out_6.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_6.D2 | 3188 | ? | 0 | 6144 | address_out_6 | NULL | NULL | address_out_6.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_6.CLKF | 3189 | ? | 0 | 6144 | address_out_6 | NULL | NULL | address_out_6.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_6.SETF | 3190 | ? | 0 | 4096 | address_out_6 | NULL | NULL | address_out_6.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_6_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_6.RSTF | 3191 | ? | 0 | 4096 | address_out_6 | NULL | NULL | address_out_6.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_6_IBUF
+
+SRFF_INSTANCE | address_out_6.REG | address_out_6 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_6.D | 3186 | ? | 0 | 0 | address_out_6 | NULL | NULL | address_out_6.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_6.CLKF | 3189 | ? | 0 | 6144 | address_out_6 | NULL | NULL | address_out_6.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_6.SETF | 3190 | ? | 0 | 4096 | address_out_6 | NULL | NULL | address_out_6.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_6_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_6.RSTF | 3191 | ? | 0 | 4096 | address_out_6 | NULL | NULL | address_out_6.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_6_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_6.Q | 3192 | ? | 0 | 0 | address_out_6 | NULL | NULL | address_out_6.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | address_out_7 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_7_IBUF | 3014 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | address_out_7 | 3030 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_7.Q | address_out_7 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | address_out_7.SI | address_out_7 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | address_in_7_IBUF | 3014 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_in_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | address_out_7.D1 | 3194 | ? | 0 | 4096 | address_out_7 | NULL | NULL | address_out_7.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | address_out_7.D2 | 3195 | ? | 0 | 6144 | address_out_7 | NULL | NULL | address_out_7.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | address_out_7.CLKF | 3196 | ? | 0 | 6144 | address_out_7 | NULL | NULL | address_out_7.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | address_out_7.SETF | 3197 | ? | 0 | 4096 | address_out_7 | NULL | NULL | address_out_7.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_7_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | address_out_7.RSTF | 3198 | ? | 0 | 4096 | address_out_7 | NULL | NULL | address_out_7.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_7_IBUF
+
+SRFF_INSTANCE | address_out_7.REG | address_out_7 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | address_out_7.D | 3193 | ? | 0 | 0 | address_out_7 | NULL | NULL | address_out_7.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | address_out_7.CLKF | 3196 | ? | 0 | 6144 | address_out_7 | NULL | NULL | address_out_7.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | address_out_7.SETF | 3197 | ? | 0 | 4096 | address_out_7 | NULL | NULL | address_out_7.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | address_in_7_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | address_out_7.RSTF | 3198 | ? | 0 | 4096 | address_out_7 | NULL | NULL | address_out_7.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | address_in_7_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | address_out_7.Q | 3199 | ? | 0 | 0 | address_out_7 | NULL | NULL | address_out_7.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_0 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_0_IBUF | 2999 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_0 | 3031 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_0.Q | data_result_0 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_0.SI | data_result_0 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_0_IBUF | 2999 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_0_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_0.D1 | 3201 | ? | 0 | 4096 | data_result_0 | NULL | NULL | data_result_0.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_0.D2 | 3202 | ? | 0 | 6144 | data_result_0 | NULL | NULL | data_result_0.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_0.CLKF | 3203 | ? | 0 | 6144 | data_result_0 | NULL | NULL | data_result_0.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_0.SETF | 3204 | ? | 0 | 4096 | data_result_0 | NULL | NULL | data_result_0.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_0_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_0.RSTF | 3205 | ? | 0 | 4096 | data_result_0 | NULL | NULL | data_result_0.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_0_IBUF
+
+SRFF_INSTANCE | data_result_0.REG | data_result_0 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_0.D | 3200 | ? | 0 | 0 | data_result_0 | NULL | NULL | data_result_0.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_0.CLKF | 3203 | ? | 0 | 6144 | data_result_0 | NULL | NULL | data_result_0.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_0.SETF | 3204 | ? | 0 | 4096 | data_result_0 | NULL | NULL | data_result_0.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_0_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_0.RSTF | 3205 | ? | 0 | 4096 | data_result_0 | NULL | NULL | data_result_0.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_0_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_0.Q | 3206 | ? | 0 | 0 | data_result_0 | NULL | NULL | data_result_0.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_1 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_1_IBUF | 3000 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_1 | 3032 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_1.Q | data_result_1 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_1.SI | data_result_1 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_1_IBUF | 3000 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_1.D1 | 3208 | ? | 0 | 4096 | data_result_1 | NULL | NULL | data_result_1.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_1.D2 | 3209 | ? | 0 | 6144 | data_result_1 | NULL | NULL | data_result_1.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_1.CLKF | 3210 | ? | 0 | 6144 | data_result_1 | NULL | NULL | data_result_1.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_1.SETF | 3211 | ? | 0 | 4096 | data_result_1 | NULL | NULL | data_result_1.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_1_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_1.RSTF | 3212 | ? | 0 | 4096 | data_result_1 | NULL | NULL | data_result_1.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_1_IBUF
+
+SRFF_INSTANCE | data_result_1.REG | data_result_1 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_1.D | 3207 | ? | 0 | 0 | data_result_1 | NULL | NULL | data_result_1.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_1.CLKF | 3210 | ? | 0 | 6144 | data_result_1 | NULL | NULL | data_result_1.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_1.SETF | 3211 | ? | 0 | 4096 | data_result_1 | NULL | NULL | data_result_1.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_1_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_1.RSTF | 3212 | ? | 0 | 4096 | data_result_1 | NULL | NULL | data_result_1.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_1_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_1.Q | 3213 | ? | 0 | 0 | data_result_1 | NULL | NULL | data_result_1.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_2 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_2_IBUF | 3001 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_2 | 3033 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_2.Q | data_result_2 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_2.SI | data_result_2 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_2_IBUF | 3001 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_2_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_2.D1 | 3215 | ? | 0 | 4096 | data_result_2 | NULL | NULL | data_result_2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_2.D2 | 3216 | ? | 0 | 6144 | data_result_2 | NULL | NULL | data_result_2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_2.CLKF | 3217 | ? | 0 | 6144 | data_result_2 | NULL | NULL | data_result_2.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_2.SETF | 3218 | ? | 0 | 4096 | data_result_2 | NULL | NULL | data_result_2.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_2_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_2.RSTF | 3219 | ? | 0 | 4096 | data_result_2 | NULL | NULL | data_result_2.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_2_IBUF
+
+SRFF_INSTANCE | data_result_2.REG | data_result_2 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_2.D | 3214 | ? | 0 | 0 | data_result_2 | NULL | NULL | data_result_2.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_2.CLKF | 3217 | ? | 0 | 6144 | data_result_2 | NULL | NULL | data_result_2.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_2.SETF | 3218 | ? | 0 | 4096 | data_result_2 | NULL | NULL | data_result_2.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_2_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_2.RSTF | 3219 | ? | 0 | 4096 | data_result_2 | NULL | NULL | data_result_2.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_2_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_2.Q | 3220 | ? | 0 | 0 | data_result_2 | NULL | NULL | data_result_2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_3 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_3_IBUF | 3002 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_3 | 3034 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_3.Q | data_result_3 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_3.SI | data_result_3 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_3_IBUF | 3002 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_3_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_3.D1 | 3222 | ? | 0 | 4096 | data_result_3 | NULL | NULL | data_result_3.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_3.D2 | 3223 | ? | 0 | 6144 | data_result_3 | NULL | NULL | data_result_3.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_3.CLKF | 3224 | ? | 0 | 6144 | data_result_3 | NULL | NULL | data_result_3.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_3.SETF | 3225 | ? | 0 | 4096 | data_result_3 | NULL | NULL | data_result_3.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_3_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_3.RSTF | 3226 | ? | 0 | 4096 | data_result_3 | NULL | NULL | data_result_3.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_3_IBUF
+
+SRFF_INSTANCE | data_result_3.REG | data_result_3 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_3.D | 3221 | ? | 0 | 0 | data_result_3 | NULL | NULL | data_result_3.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_3.CLKF | 3224 | ? | 0 | 6144 | data_result_3 | NULL | NULL | data_result_3.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_3.SETF | 3225 | ? | 0 | 4096 | data_result_3 | NULL | NULL | data_result_3.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_3_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_3.RSTF | 3226 | ? | 0 | 4096 | data_result_3 | NULL | NULL | data_result_3.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_3_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_3.Q | 3227 | ? | 0 | 0 | data_result_3 | NULL | NULL | data_result_3.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_4 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_4_IBUF | 3003 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_4 | 3035 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_4.Q | data_result_4 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_4.SI | data_result_4 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_4_IBUF | 3003 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_4_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_4.D1 | 3229 | ? | 0 | 4096 | data_result_4 | NULL | NULL | data_result_4.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_4.D2 | 3230 | ? | 0 | 6144 | data_result_4 | NULL | NULL | data_result_4.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_4.CLKF | 3231 | ? | 0 | 6144 | data_result_4 | NULL | NULL | data_result_4.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_4.SETF | 3232 | ? | 0 | 4096 | data_result_4 | NULL | NULL | data_result_4.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_4_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_4.RSTF | 3233 | ? | 0 | 4096 | data_result_4 | NULL | NULL | data_result_4.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_4_IBUF
+
+SRFF_INSTANCE | data_result_4.REG | data_result_4 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_4.D | 3228 | ? | 0 | 0 | data_result_4 | NULL | NULL | data_result_4.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_4.CLKF | 3231 | ? | 0 | 6144 | data_result_4 | NULL | NULL | data_result_4.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_4.SETF | 3232 | ? | 0 | 4096 | data_result_4 | NULL | NULL | data_result_4.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_4_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_4.RSTF | 3233 | ? | 0 | 4096 | data_result_4 | NULL | NULL | data_result_4.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_4_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_4.Q | 3234 | ? | 0 | 0 | data_result_4 | NULL | NULL | data_result_4.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_5 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_5_IBUF | 3004 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_5 | 3036 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_5.Q | data_result_5 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_5.SI | data_result_5 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_5_IBUF | 3004 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_5_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_5.D1 | 3236 | ? | 0 | 4096 | data_result_5 | NULL | NULL | data_result_5.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_5.D2 | 3237 | ? | 0 | 6144 | data_result_5 | NULL | NULL | data_result_5.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_5.CLKF | 3238 | ? | 0 | 6144 | data_result_5 | NULL | NULL | data_result_5.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_5.SETF | 3239 | ? | 0 | 4096 | data_result_5 | NULL | NULL | data_result_5.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_5_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_5.RSTF | 3240 | ? | 0 | 4096 | data_result_5 | NULL | NULL | data_result_5.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_5_IBUF
+
+SRFF_INSTANCE | data_result_5.REG | data_result_5 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_5.D | 3235 | ? | 0 | 0 | data_result_5 | NULL | NULL | data_result_5.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_5.CLKF | 3238 | ? | 0 | 6144 | data_result_5 | NULL | NULL | data_result_5.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_5.SETF | 3239 | ? | 0 | 4096 | data_result_5 | NULL | NULL | data_result_5.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_5_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_5.RSTF | 3240 | ? | 0 | 4096 | data_result_5 | NULL | NULL | data_result_5.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_5_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_5.Q | 3241 | ? | 0 | 0 | data_result_5 | NULL | NULL | data_result_5.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_6 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_6 | 3037 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_6.Q | data_result_6 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_6.SI | data_result_6 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_6.D1 | 3243 | ? | 0 | 4096 | data_result_6 | NULL | NULL | data_result_6.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_6.D2 | 3244 | ? | 0 | 6144 | data_result_6 | NULL | NULL | data_result_6.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_6.CLKF | 3245 | ? | 0 | 6144 | data_result_6 | NULL | NULL | data_result_6.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_6.SETF | 3246 | ? | 0 | 4096 | data_result_6 | NULL | NULL | data_result_6.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_6_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_6.RSTF | 3247 | ? | 0 | 4096 | data_result_6 | NULL | NULL | data_result_6.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_6_IBUF
+
+SRFF_INSTANCE | data_result_6.REG | data_result_6 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_6.D | 3242 | ? | 0 | 0 | data_result_6 | NULL | NULL | data_result_6.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_6.CLKF | 3245 | ? | 0 | 6144 | data_result_6 | NULL | NULL | data_result_6.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_6.SETF | 3246 | ? | 0 | 4096 | data_result_6 | NULL | NULL | data_result_6.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_6_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_6.RSTF | 3247 | ? | 0 | 4096 | data_result_6 | NULL | NULL | data_result_6.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_6_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_6.Q | 3248 | ? | 0 | 0 | data_result_6 | NULL | NULL | data_result_6.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | data_result_7 | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | data_result_7 | 3038 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_7.Q | data_result_7 | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | data_result_7.SI | data_result_7 | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_result_7.D1 | 3250 | ? | 0 | 4096 | data_result_7 | NULL | NULL | data_result_7.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_result_7.D2 | 3251 | ? | 0 | 6144 | data_result_7 | NULL | NULL | data_result_7.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | data_result_7.CLKF | 3252 | ? | 0 | 6144 | data_result_7 | NULL | NULL | data_result_7.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | data_result_7.SETF | 3253 | ? | 0 | 4096 | data_result_7 | NULL | NULL | data_result_7.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_7_IBUF
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | data_result_7.RSTF | 3254 | ? | 0 | 4096 | data_result_7 | NULL | NULL | data_result_7.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_7_IBUF
+
+SRFF_INSTANCE | data_result_7.REG | data_result_7 | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_result_7.D | 3249 | ? | 0 | 0 | data_result_7 | NULL | NULL | data_result_7.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | data_result_7.CLKF | 3252 | ? | 0 | 6144 | data_result_7 | NULL | NULL | data_result_7.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | data_result_7.SETF | 3253 | ? | 0 | 4096 | data_result_7 | NULL | NULL | data_result_7.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_TRUE | data_from_device_7_IBUF
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | data_result_7.RSTF | 3254 | ? | 0 | 4096 | data_result_7 | NULL | NULL | data_result_7.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 4 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | data_from_device_7_IBUF
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_result_7.Q | 3255 | ? | 0 | 0 | data_result_7 | NULL | NULL | data_result_7.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+PrldLow+OptxMapped | rw_out_OBUF | cache_controller_COPY_0_COPY_0 | 2155873281 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM | 3074 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.Q | rw_out_OBUF/rw_out_OBUF_RSTF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
+NODE | rw_out_OBUF | 3039 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | rw_out_OBUF.Q | rw_out_OBUF | 0 | 0 | MC_Q
+
+SIGNAL_INSTANCE | rw_out_OBUF.SI | rw_out_OBUF | 0 | 4 | 5
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM | 3074 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.Q | rw_out_OBUF/rw_out_OBUF_RSTF | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | rw_out_OBUF.D1 | 3257 | ? | 0 | 4096 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | rw_out_OBUF.D2 | 3258 | ? | 0 | 6144 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 3 | 9 | MC_SI_CLKF
+SIGNAL | NODE | rw_out_OBUF.CLKF | 3259 | ? | 0 | 6144 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 5 | 9 | MC_SI_SETF
+SIGNAL | NODE | rw_out_OBUF.SETF | 3260 | ? | 0 | 4096 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_TRUE | operation_0_IBUF | IV_FALSE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM
+OUTPUT_NODE_TYPE | 6 | 9 | MC_SI_RSTF
+SIGNAL | NODE | rw_out_OBUF.RSTF | 3261 | ? | 0 | 4096 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 1 | IV_TRUE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM
+
+SRFF_INSTANCE | rw_out_OBUF.REG | rw_out_OBUF | 0 | 4 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | rw_out_OBUF.D | 3256 | ? | 0 | 0 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+SIGNAL | NODE | rw_out_OBUF.CLKF | 3259 | ? | 0 | 6144 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 3 | 9 | MC_SI_CLKF
+SPPTERM | 0 | IV_ZERO
+INPUT_NODE_TYPE | 2 | 8 | SRFF_S
+SIGNAL | NODE | rw_out_OBUF.SETF | 3260 | ? | 0 | 4096 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 5 | 9 | MC_SI_SETF
+SPPTERM | 4 | IV_TRUE | operation_0_IBUF | IV_FALSE | operation_2_IBUF | IV_FALSE | operation_1_IBUF | IV_FALSE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+SIGNAL | NODE | rw_out_OBUF.RSTF | 3261 | ? | 0 | 4096 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.SI | 6 | 9 | MC_SI_RSTF
+SPPTERM | 1 | IV_TRUE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | rw_out_OBUF.Q | 3262 | ? | 0 | 0 | rw_out_OBUF | NULL | NULL | rw_out_OBUF.REG | 0 | 8 | SRFF_Q
+
+OUTPUT_INSTANCE | 0 | data_to_device<0> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_0$Q | 2974 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_0.Q | data_to_device_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<0> | 3040 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<1> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_1$Q | 2976 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_1.Q | data_to_device_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<1> | 3041 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<2> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_2$Q | 2978 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_2.Q | data_to_device_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<2> | 3042 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<3> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_3$Q | 2980 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_3.Q | data_to_device_3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<3> | 3043 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<4> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_4$Q | 2982 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_4.Q | data_to_device_4 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<4> | 3044 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<5> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_5$Q | 2984 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_5.Q | data_to_device_5 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<5> | 3045 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<6> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_6$Q | 2986 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6.Q | data_to_device_6 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<6> | 3046 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_to_device<7> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_to_device_7$Q | 2988 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7.Q | data_to_device_7 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_to_device<7> | 3047 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_to_device<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | ec | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | ec_OBUF$Q | 2990 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | ec_OBUF.Q | ec_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | ec | 3048 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | ec | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | em | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | em_OBUF$Q | 2996 | ? | 0 | 1032 | cache_controller_COPY_0_COPY_0 | NULL | em_OBUF.Q | em_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | em | 3049 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | em | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<0> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_0 | 3023 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_0.Q | address_out_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<0> | 3050 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<1> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_1 | 3024 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_1.Q | address_out_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<1> | 3051 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<2> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_2 | 3025 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_2.Q | address_out_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<2> | 3052 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<3> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_3 | 3026 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_3.Q | address_out_3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<3> | 3053 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<4> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_4 | 3027 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_4.Q | address_out_4 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<4> | 3054 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<5> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_5 | 3028 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_5.Q | address_out_5 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<5> | 3055 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<6> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_6 | 3029 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_6.Q | address_out_6 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<6> | 3056 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | address_out<7> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | address_out_7 | 3030 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | address_out_7.Q | address_out_7 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | address_out<7> | 3057 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | address_out<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<0> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_0 | 3031 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_0.Q | data_result_0 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<0> | 3058 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<0> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<1> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_1 | 3032 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_1.Q | data_result_1 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<1> | 3059 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<1> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<2> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_2 | 3033 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_2.Q | data_result_2 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<2> | 3060 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<2> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<3> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_3 | 3034 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_3.Q | data_result_3 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<3> | 3061 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<3> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<4> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_4 | 3035 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_4.Q | data_result_4 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<4> | 3062 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<4> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<5> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_5 | 3036 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_5.Q | data_result_5 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<5> | 3063 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<5> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<6> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_6 | 3037 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_6.Q | data_result_6 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<6> | 3064 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<6> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | data_result<7> | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | data_result_7 | 3038 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_result_7.Q | data_result_7 | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | data_result<7> | 3065 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_result<7> | 0 | 6 | OI_OUT
+
+OUTPUT_INSTANCE | 0 | rw_out | cache_controller_COPY_0_COPY_0 | 7 | 1 | 1
+INPUT_NODE_TYPE | 0 | 6 | OI_IN
+NODE | rw_out_OBUF | 3039 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | rw_out_OBUF.Q | rw_out_OBUF | 0 | 0 | MC_Q
+OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
+NODE | rw_out | 3066 | PO | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | rw_out | 0 | 6 | OI_OUT
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | ec_cmp_eq0000/ec_cmp_eq0000_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 3 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | 3067 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | ec_cmp_eq0000/ec_cmp_eq0000_D2.SI | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 0 | 3 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.D1 | 3264 | ? | 0 | 4096 | ec_cmp_eq0000/ec_cmp_eq0000_D2 | NULL | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.D2 | 3265 | ? | 0 | 4096 | ec_cmp_eq0000/ec_cmp_eq0000_D2 | NULL | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_FALSE | operation_0_IBUF | IV_TRUE | operation_2_IBUF | IV_FALSE | operation_1_IBUF
+
+SRFF_INSTANCE | ec_cmp_eq0000/ec_cmp_eq0000_D2.REG | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.D | 3263 | ? | 0 | 0 | ec_cmp_eq0000/ec_cmp_eq0000_D2 | NULL | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | ec_cmp_eq0000/ec_cmp_eq0000_D2.Q | 3266 | ? | 0 | 0 | ec_cmp_eq0000/ec_cmp_eq0000_D2 | NULL | NULL | ec_cmp_eq0000/ec_cmp_eq0000_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | data_to_device_6__and0001/data_to_device_6__and0001_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM | 3068 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.Q | data_to_device_6__and0001/data_to_device_6__and0001_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_6__and0001/data_to_device_6__and0001_D2.SI | data_to_device_6__and0001/data_to_device_6__and0001_D2 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.D1 | 3268 | ? | 0 | 4096 | data_to_device_6__and0001/data_to_device_6__and0001_D2 | NULL | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.D2 | 3269 | ? | 0 | 4096 | data_to_device_6__and0001/data_to_device_6__and0001_D2 | NULL | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_6_IBUF
+
+SRFF_INSTANCE | data_to_device_6__and0001/data_to_device_6__and0001_D2.REG | data_to_device_6__and0001/data_to_device_6__and0001_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.D | 3267 | ? | 0 | 0 | data_to_device_6__and0001/data_to_device_6__and0001_D2 | NULL | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_6__and0001/data_to_device_6__and0001_D2.Q | 3270 | ? | 0 | 0 | data_to_device_6__and0001/data_to_device_6__and0001_D2 | NULL | NULL | data_to_device_6__and0001/data_to_device_6__and0001_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_6_IBUF | 3021 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.UIM | 3069 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.Q | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.SI | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_6_IBUF | 3021 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.D1 | 3272 | ? | 0 | 4096 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | NULL | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.D2 | 3273 | ? | 0 | 4096 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | NULL | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_6_IBUF
+
+SRFF_INSTANCE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.REG | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.D | 3271 | ? | 0 | 0 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | NULL | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.Q | 3274 | ? | 0 | 0 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | NULL | NULL | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.UIM | 3070 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.Q | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.SI | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_6_IBUF | 3005 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_6_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.D1 | 3276 | ? | 0 | 4096 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | NULL | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.D2 | 3277 | ? | 0 | 4096 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | NULL | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_6_IBUF
+
+SRFF_INSTANCE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.REG | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.D | 3275 | ? | 0 | 0 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | NULL | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.Q | 3278 | ? | 0 | 0 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | NULL | NULL | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | data_to_device_7__and0001/data_to_device_7__and0001_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM | 3071 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.Q | data_to_device_7__and0001/data_to_device_7__and0001_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_7__and0001/data_to_device_7__and0001_D2.SI | data_to_device_7__and0001/data_to_device_7__and0001_D2 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.D1 | 3280 | ? | 0 | 4096 | data_to_device_7__and0001/data_to_device_7__and0001_D2 | NULL | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.D2 | 3281 | ? | 0 | 4096 | data_to_device_7__and0001/data_to_device_7__and0001_D2 | NULL | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_7_IBUF
+
+SRFF_INSTANCE | data_to_device_7__and0001/data_to_device_7__and0001_D2.REG | data_to_device_7__and0001/data_to_device_7__and0001_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.D | 3279 | ? | 0 | 0 | data_to_device_7__and0001/data_to_device_7__and0001_D2 | NULL | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_7__and0001/data_to_device_7__and0001_D2.Q | 3282 | ? | 0 | 0 | data_to_device_7__and0001/data_to_device_7__and0001_D2 | NULL | NULL | data_to_device_7__and0001/data_to_device_7__and0001_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_7_IBUF | 3022 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.UIM | 3072 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.Q | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.SI | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_in_7_IBUF | 3022 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_in_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.D1 | 3284 | ? | 0 | 4096 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | NULL | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.D2 | 3285 | ? | 0 | 4096 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | NULL | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | read_ready_IBUF | IV_TRUE | data_in_7_IBUF
+
+SRFF_INSTANCE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.REG | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.D | 3283 | ? | 0 | 0 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | NULL | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.Q | 3286 | ? | 0 | 0 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | NULL | NULL | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | cache_controller_COPY_0_COPY_0 | 2181038081 | 2 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.UIM | 3073 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.Q | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.SI | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | 0 | 2 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | data_from_device_7_IBUF | 3006 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | data_from_device_7_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.D1 | 3288 | ? | 0 | 4096 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | NULL | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.D2 | 3289 | ? | 0 | 4096 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | NULL | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | read_ready_IBUF | IV_TRUE | data_from_device_7_IBUF
+
+SRFF_INSTANCE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.REG | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.D | 3287 | ? | 0 | 0 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | NULL | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.Q | 3290 | ? | 0 | 0 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | NULL | NULL | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | LowPow+SoftPfbk | rw_out_OBUF/rw_out_OBUF_RSTF | cache_controller_COPY_0_COPY_0 | 2181038081 | 4 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | rw_out_OBUF/rw_out_OBUF_RSTF.UIM | 3074 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.Q | rw_out_OBUF/rw_out_OBUF_RSTF | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | rw_out_OBUF/rw_out_OBUF_RSTF.SI | rw_out_OBUF/rw_out_OBUF_RSTF | 0 | 4 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | read_ready_IBUF | 2993 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | read_ready_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_0_IBUF | 2992 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_0_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_2_IBUF | 2994 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_2_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | operation_1_IBUF | 2995 | ? | 0 | 0 | cache_controller_COPY_0_COPY_0 | NULL | NULL | operation_1_IBUF | 0 | 5 | II_IMUX
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | rw_out_OBUF/rw_out_OBUF_RSTF.D1 | 3292 | ? | 0 | 4096 | rw_out_OBUF/rw_out_OBUF_RSTF | NULL | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | rw_out_OBUF/rw_out_OBUF_RSTF.D2 | 3293 | ? | 0 | 4096 | rw_out_OBUF/rw_out_OBUF_RSTF | NULL | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | read_ready_IBUF
+SPPTERM | 3 | IV_FALSE | operation_0_IBUF | IV_FALSE | operation_2_IBUF | IV_TRUE | operation_1_IBUF
+
+SRFF_INSTANCE | rw_out_OBUF/rw_out_OBUF_RSTF.REG | rw_out_OBUF/rw_out_OBUF_RSTF | 0 | 1 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | rw_out_OBUF/rw_out_OBUF_RSTF.D | 3291 | ? | 0 | 0 | rw_out_OBUF/rw_out_OBUF_RSTF | NULL | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.XOR | 0 | 7 | ALU_F
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | rw_out_OBUF/rw_out_OBUF_RSTF.Q | 3294 | ? | 0 | 0 | rw_out_OBUF/rw_out_OBUF_RSTF | NULL | NULL | rw_out_OBUF/rw_out_OBUF_RSTF.REG | 0 | 8 | SRFF_Q
+
+FB_INSTANCE | FOOBAR1_ | cache_controller_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | data_to_device_6 | 1 | NULL | 0 | data_to_device<6> | 1 | 16 | 49152
+FBPIN | 2 | NULL | 0 | data_from_device_5_IBUF | 1 | NULL | 0 | 13 | 49152
+FBPIN | 3 | NULL | 0 | data_from_device_1_IBUF | 1 | NULL | 0 | 18 | 49152
+FBPIN | 4 | data_to_device_7 | 1 | NULL | 0 | data_to_device<7> | 1 | 20 | 49152
+FBPIN | 6 | NULL | 0 | data_from_device_0_IBUF | 1 | NULL | 0 | 15 | 49152
+FBPIN | 7 | address_out_1 | 1 | NULL | 0 | address_out<1> | 1 | 25 | 49152
+FBPIN | 8 | NULL | 0 | address_in_6_IBUF | 1 | NULL | 0 | 17 | 49152
+FBPIN | 9 | NULL | 0 | data_from_device_2_IBUF | 1 | NULL | 0 | 22 | 57344
+FBPIN | 10 | data_to_device_0 | 1 | NULL | 0 | data_to_device<0> | 1 | 28 | 49152
+FBPIN | 11 | NULL | 0 | read_ready_IBUF | 1 | NULL | 0 | 23 | 57344
+FBPIN | 12 | NULL | 0 | data_in_7_IBUF | 1 | NULL | 0 | 33 | 49152
+FBPIN | 13 | data_to_device_1 | 1 | NULL | 0 | data_to_device<1> | 1 | 36 | 49152
+FBPIN | 15 | NULL | 0 | data_in_3_IBUF | 1 | NULL | 0 | 29 | 49152
+FBPIN | 16 | data_to_device_3 | 1 | NULL | 0 | data_to_device<3> | 1 | 39 | 49152
+FBPIN | 17 | NULL | 0 | data_from_device_3_IBUF | 1 | NULL | 0 | 30 | 49152
+
+FB_INSTANCE | FOOBAR2_ | cache_controller_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | address_out_2 | 1 | NULL | 0 | address_out<2> | 1 | 87 | 49152
+FBPIN | 2 | NULL | 0 | address_in_5_IBUF | 1 | NULL | 0 | 94 | 49152
+FBPIN | 3 | address_out_3 | 1 | NULL | 0 | address_out<3> | 1 | 91 | 49152
+FBPIN | 4 | NULL | 0 | data_in_4_IBUF | 1 | NULL | 0 | 93 | 49152
+FBPIN | 5 | address_out_4 | 1 | NULL | 0 | address_out<4> | 1 | 95 | 49152
+FBPIN | 6 | NULL | 0 | hm_IBUF | 1 | NULL | 0 | 96 | 49152
+FBPIN | 7 | NULL | 0 | data_in_5_IBUF | 1 | NULL | 0 | 3 | 53248
+FBPIN | 8 | address_out_5 | 1 | NULL | 0 | address_out<5> | 1 | 97 | 49152
+FBPIN | 9 | NULL | 0 | address_in_2_IBUF | 1 | NULL | 0 | 99 | 51200
+FBPIN | 10 | NULL | 0 | data_from_device_6_IBUF | 1 | NULL | 0 | 1 | 49152
+FBPIN | 11 | NULL | 0 | address_in_0_IBUF | 1 | NULL | 0 | 4 | 53248
+FBPIN | 12 | address_out_7 | 1 | NULL | 0 | address_out<7> | 1 | 6 | 49152
+FBPIN | 13 | NULL | 0 | address_in_3_IBUF | 1 | NULL | 0 | 8 | 49152
+FBPIN | 14 | data_result_1 | 1 | NULL | 0 | data_result<1> | 1 | 9 | 49152
+FBPIN | 15 | NULL | 0 | data_from_device_7_IBUF | 1 | NULL | 0 | 11 | 49152
+FBPIN | 16 | data_result_3 | 1 | NULL | 0 | data_result<3> | 1 | 10 | 49152
+FBPIN | 17 | NULL | 0 | operation_1_IBUF | 1 | NULL | 0 | 12 | 49152
+FBPIN | 18 | NULL | 0 | address_in_1_IBUF | 1 | NULL | 0 | 92 | 49152
+
+FB_INSTANCE | FOOBAR3_ | cache_controller_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | NULL | 0 | data_in_1_IBUF | 1 | NULL | 0 | 41 | 49152
+FBPIN | 2 | data_result_4 | 1 | NULL | 0 | data_result<4> | 1 | 32 | 49152
+FBPIN | 4 | data_result_5 | 1 | NULL | 0 | data_result<5> | 1 | 50 | 49152
+FBPIN | 5 | NULL | 0 | address_in_7_IBUF | 1 | NULL | 0 | 35 | 49152
+FBPIN | 6 | NULL | 0 | address_in_4_IBUF | 1 | NULL | 0 | 53 | 49152
+FBPIN | 7 | data_result_6 | 1 | NULL | 0 | data_result<6> | 1 | 54 | 49152
+FBPIN | 10 | data_result_7 | 1 | NULL | 0 | data_result<7> | 1 | 60 | 49152
+FBPIN | 12 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 | 1 | data_in_0_IBUF | 1 | NULL | 0 | 61 | 49152
+FBPIN | 13 | data_to_device_5 | 1 | NULL | 0 | data_to_device<5> | 1 | 63 | 49152
+FBPIN | 14 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 | 1 | NULL | 0 | NULL | 0 | 55 | 49152
+FBPIN | 15 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 | 1 | NULL | 0 | NULL | 0 | 56 | 49152
+FBPIN | 16 | ec_OBUF | 1 | NULL | 0 | ec | 1 | 64 | 49152
+FBPIN | 17 | data_to_device_7__and0001/data_to_device_7__and0001_D2 | 1 | NULL | 0 | NULL | 0 | 58 | 49152
+FBPIN | 18 | em_OBUF | 1 | NULL | 0 | em | 1 | 59 | 49152
+
+FB_INSTANCE | FOOBAR4_ | cache_controller_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | address_out_0 | 1 | NULL | 0 | address_out<0> | 1 | 65 | 49152
+FBPIN | 4 | address_out_6 | 1 | NULL | 0 | address_out<6> | 1 | 72 | 49152
+FBPIN | 6 | NULL | 0 | data_in_6_IBUF | 1 | NULL | 0 | 76 | 49152
+FBPIN | 7 | data_result_0 | 1 | NULL | 0 | data_result<0> | 1 | 77 | 49152
+FBPIN | 8 | NULL | 0 | operation_0_IBUF | 1 | NULL | 0 | 70 | 49152
+FBPIN | 10 | data_result_2 | 1 | NULL | 0 | data_result<2> | 1 | 81 | 49152
+FBPIN | 12 | ec_cmp_eq0000/ec_cmp_eq0000_D2 | 1 | operation_2_IBUF | 1 | NULL | 0 | 82 | 49152
+FBPIN | 13 | data_to_device_2 | 1 | NULL | 0 | data_to_device<2> | 1 | 85 | 49152
+FBPIN | 14 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 | 1 | NULL | 0 | NULL | 0 | 78 | 49152
+FBPIN | 15 | data_to_device_6__and0001/data_to_device_6__and0001_D2 | 1 | data_in_2_IBUF | 1 | NULL | 0 | 89 | 49152
+FBPIN | 16 | data_to_device_4 | 1 | NULL | 0 | data_to_device<4> | 1 | 86 | 49152
+FBPIN | 17 | rw_out_OBUF/rw_out_OBUF_RSTF | 1 | data_from_device_4_IBUF | 1 | NULL | 0 | 90 | 49152
+FBPIN | 18 | rw_out_OBUF | 1 | NULL | 0 | rw_out | 1 | 79 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR5_ | cache_controller_COPY_0_COPY_0 | 0 | 0 | 0
+
+BUSINFO | ADDRESS_IN<7:0> | 8 | 0 | 0 | address_in<0> | 7 | address_in<1> | 6 | address_in<2> | 5 | address_in<3> | 4 | address_in<4> | 3 | address_in<5> | 2 | address_in<6> | 1 | address_in<7> | 0
+BUSINFO | ADDRESS_OUT<7:0> | 8 | 0 | 1 | address_out<0> | 7 | address_out<1> | 6 | address_out<2> | 5 | address_out<3> | 4 | address_out<4> | 3 | address_out<5> | 2 | address_out<6> | 1 | address_out<7> | 0
+BUSINFO | DATA_FROM_DEVICE<7:0> | 8 | 0 | 0 | data_from_device<0> | 7 | data_from_device<1> | 6 | data_from_device<2> | 5 | data_from_device<3> | 4 | data_from_device<4> | 3 | data_from_device<5> | 2 | data_from_device<6> | 1 | data_from_device<7> | 0
+BUSINFO | DATA_IN<7:0> | 8 | 0 | 0 | data_in<0> | 7 | data_in<1> | 6 | data_in<2> | 5 | data_in<3> | 4 | data_in<4> | 3 | data_in<5> | 2 | data_in<6> | 1 | data_in<7> | 0
+BUSINFO | DATA_RESULT<7:0> | 8 | 0 | 1 | data_result<0> | 7 | data_result<1> | 6 | data_result<2> | 5 | data_result<3> | 4 | data_result<4> | 3 | data_result<5> | 2 | data_result<6> | 1 | data_result<7> | 0
+BUSINFO | DATA_TO_DEVICE<7:0> | 8 | 0 | 1 | data_to_device<0> | 7 | data_to_device<1> | 6 | data_to_device<2> | 5 | data_to_device<3> | 4 | data_to_device<4> | 3 | data_to_device<5> | 2 | data_to_device<6> | 1 | data_to_device<7> | 0
+BUSINFO | OPERATION<2:0> | 3 | 0 | 0 | operation<0> | 2 | operation<1> | 1 | operation<2> | 0
+
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 0 | data_to_device_6 | NULL | 2 | address_in<1> | 92 | 7 | data_in<0> | 61 | 8 | data_from_device<1> | 18 | 9 | data_to_device_0 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 11 | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | NULL | 13 | data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2.UIM | NULL | 14 | data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2.UIM | NULL | 16 | data_to_device_7__and0001/data_to_device_7__and0001_D2.UIM | NULL | 19 | data_in<1> | 41
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 21 | operation<2> | 82 | 22 | data_from_device<0> | 15 | 23 | data_to_device_6__and0001/data_to_device_6__and0001_D2.UIM | NULL | 27 | data_in<3> | 29 | 29 | data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2.UIM | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 32 | data_from_device<3> | 30 | 36 | data_to_device_3 | NULL | 39 | data_from_device<6> | 1 | 41 | operation<0> | 70 | 42 | data_to_device_1 | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 45 | data_from_device<7> | 11 | 46 | data_to_device_7 | NULL | 47 | operation<1> | 12 | 48 | read_ready | 23 | 50 | data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR1_ | 0 | -1 | 74 | -1 | -1 | -1 | -1 | 115 | 116 | 9 | -1 | 65 | -1 | 49 | 50 | -1 | 52 | -1 | -1 | 139 | -1 | 83 | 110 | 68 | -1 | -1 | -1 | 130 | -1 | 67 | -1 | -1 | 132 | -1 | -1 | -1 | 15 | -1 | -1 | 88 | -1 | 101 | 12 | -1 | -1 | 102 | 3 | 104 | 122 | -1 | 47 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 8 | data_from_device<1> | 18 | 11 | operation<2> | 82 | 14 | address_in<2> | 99 | 21 | address_in<7> | 35 | 32 | data_from_device<3> | 30
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 33 | address_in<5> | 94 | 41 | operation<0> | 70 | 44 | address_in<3> | 8 | 47 | operation<1> | 12 | 50 | address_in<4> | 53
+
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 116 | -1 | -1 | 83 | -1 | -1 | 86 | -1 | -1 | -1 | -1 | -1 | -1 | 138 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 132 | 78 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 101 | -1 | -1 | 96 | -1 | -1 | 104 | -1 | -1 | 129 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 1 | data_from_device<4> | 90 | 3 | data_in<6> | 76 | 10 | hm | 96 | 11 | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | NULL | 14 | read_ready | 23
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 16 | data_from_device<6> | 1 | 17 | em_OBUF | NULL | 21 | operation<2> | 82 | 23 | ec_OBUF | NULL | 39 | data_in<7> | 33
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 40 | data_from_device<5> | 13 | 41 | operation<0> | 70 | 42 | data_to_device_5 | NULL | 45 | data_from_device<7> | 11 | 47 | operation<1> | 12
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 53 | data_in<5> | 3
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | 73 | -1 | 93 | -1 | -1 | -1 | -1 | -1 | -1 | 82 | 65 | -1 | -1 | 122 | -1 | 88 | 53 | -1 | -1 | -1 | 83 | -1 | 51 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 136 | 106 | 101 | 48 | -1 | -1 | 102 | -1 | 104 | -1 | -1 | -1 | -1 | -1 | 90
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 1 | data_from_device<4> | 90 | 4 | data_in<4> | 93 | 6 | address_in<6> | 17 | 11 | ec_cmp_eq0000/ec_cmp_eq0000_D2.UIM | NULL | 12 | data_from_device<2> | 22
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 14 | read_ready | 23 | 15 | data_to_device_4 | NULL | 16 | data_from_device<6> | 1 | 21 | operation<2> | 82 | 22 | data_from_device<0> | 15
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 28 | data_to_device_2 | NULL | 41 | operation<0> | 70 | 42 | data_in<2> | 89 | 45 | rw_out_OBUF/rw_out_OBUF_RSTF.UIM | NULL | 47 | operation<1> | 12
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 49 | address_in<0> | 4
+
+FB_IMUX_INDEX | FOOBAR4_ | -1 | 73 | -1 | -1 | 76 | -1 | 114 | -1 | -1 | -1 | -1 | 65 | 120 | -1 | 122 | 69 | 88 | -1 | -1 | -1 | -1 | 83 | 110 | -1 | -1 | -1 | -1 | -1 | 66 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 101 | 75 | -1 | -1 | 70 | -1 | 104 | -1 | 92 | -1 | -1 | -1 | -1
+

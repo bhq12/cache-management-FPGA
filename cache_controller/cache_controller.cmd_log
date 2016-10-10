@@ -1,0 +1,7 @@
+xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/cache_controller.xst" -ofn "P:/cache-management-FPGA/cache_controller/cache_controller.syr" 
+xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/cache_controller.xst" -ofn "P:/cache-management-FPGA/cache_controller/cache_controller.syr" 
+ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl cache_controller.ngc cache_controller.ngd  
+cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper cache_controller.ngd 
+tsim -intstyle ise cache_controller cache_controller.nga 
+taengine -intstyle ise -f cache_controller -w --format html1 -l cache_controller_html/tim/timing_report.htm 
+hprep6 -s IEEE1149 -n cache_controller -i cache_controller 

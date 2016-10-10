@@ -1,0 +1,92 @@
+Pin Freeze File:  version M.81d
+
+A9572XL100 XA9572XL-15-TQ100
+address_in<0> S:PIN4
+address_in<1> S:PIN92
+address_in<2> S:PIN99
+address_in<3> S:PIN8
+address_in<4> S:PIN53
+address_in<5> S:PIN94
+address_in<6> S:PIN17
+address_in<7> S:PIN35
+data_from_device<0> S:PIN15
+data_from_device<1> S:PIN18
+data_from_device<2> S:PIN22
+data_from_device<3> S:PIN30
+data_from_device<4> S:PIN90
+data_from_device<5> S:PIN13
+data_from_device<6> S:PIN1
+data_from_device<7> S:PIN11
+data_in<0> S:PIN61
+data_in<1> S:PIN41
+data_in<2> S:PIN89
+data_in<3> S:PIN29
+data_in<4> S:PIN93
+data_in<5> S:PIN3
+data_in<6> S:PIN76
+data_in<7> S:PIN33
+hm S:PIN96
+operation<0> S:PIN70
+operation<1> S:PIN12
+operation<2> S:PIN82
+read_ready S:PIN23
+address_out<0> S:PIN65
+address_out<1> S:PIN25
+address_out<2> S:PIN87
+address_out<3> S:PIN91
+address_out<4> S:PIN95
+address_out<5> S:PIN97
+address_out<6> S:PIN72
+address_out<7> S:PIN6
+data_result<0> S:PIN77
+data_result<1> S:PIN9
+data_result<2> S:PIN81
+data_result<3> S:PIN10
+data_result<4> S:PIN32
+data_result<5> S:PIN50
+data_result<6> S:PIN54
+data_result<7> S:PIN60
+data_to_device<0> S:PIN28
+data_to_device<1> S:PIN36
+data_to_device<2> S:PIN85
+data_to_device<3> S:PIN39
+data_to_device<4> S:PIN86
+data_to_device<5> S:PIN63
+data_to_device<6> S:PIN16
+data_to_device<7> S:PIN20
+ec S:PIN64
+em S:PIN59
+rw_out S:PIN79
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_1 data_to_device_6
+PARTITION FB1_4 data_to_device_7
+PARTITION FB1_7 address_out_1
+PARTITION FB1_10 data_to_device_0
+PARTITION FB1_13 data_to_device_1
+PARTITION FB1_16 data_to_device_3
+
+PARTITION FB2_1 address_out_2
+PARTITION FB2_3 address_out_3
+PARTITION FB2_5 address_out_4
+PARTITION FB2_8 address_out_5
+PARTITION FB2_12 address_out_7
+PARTITION FB2_14 data_result_1
+PARTITION FB2_16 data_result_3
+
+PARTITION FB3_2 data_result_4
+PARTITION FB3_4 data_result_5
+PARTITION FB3_7 data_result_6
+PARTITION FB3_10 data_result_7
+PARTITION FB3_12 data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 data_to_device_5 data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2
+		 ec_OBUF data_to_device_7__and0001/data_to_device_7__and0001_D2 em_OBUF
+PARTITION FB4_1 address_out_0
+PARTITION FB4_4 address_out_6
+PARTITION FB4_7 data_result_0
+PARTITION FB4_10 data_result_2
+PARTITION FB4_12 ec_cmp_eq0000/ec_cmp_eq0000_D2 data_to_device_2 data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 data_to_device_6__and0001/data_to_device_6__and0001_D2
+		 data_to_device_4 rw_out_OBUF/rw_out_OBUF_RSTF rw_out_OBUF
+

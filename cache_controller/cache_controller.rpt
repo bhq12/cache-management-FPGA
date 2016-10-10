@@ -1,0 +1,683 @@
+ 
+cpldfit:  version M.81d                             Xilinx Inc.
+                                  Fitter Report
+Design Name: cache_controller                    Date: 10-10-2016, 11:56AM
+Device Used: XA9572XL-15-TQ100
+Fitting Status: Successful
+
+*************************  Mapped Resource Summary  **************************
+
+Macrocells     Product Terms    Function Block   Registers      Pins           
+Used/Tot       Used/Tot         Inps Used/Tot    Used/Tot       Used/Tot       
+35 /72  ( 49%) 73  /360  ( 20%) 67 /216 ( 31%)   17 /72  ( 24%) 56 /72  ( 78%)
+
+** Function Block Resources **
+
+Function    Mcells      FB Inps     Pterms      IO          
+Block       Used/Tot    Used/Tot    Used/Tot    Used/Tot    
+FB1           6/18       25/54       19/90      15/18
+FB2           7/18       10/54       14/90      18/18*
+FB3          11/18       16/54       19/90      11/18
+FB4          11/18       16/54       21/90      12/18
+             -----       -----       -----      -----    
+             35/72       67/216      73/360     56/72 
+
+* - Resource is exhausted
+
+** Global Control Resources **
+
+Global clock net(s) unused.
+Global output enable net(s) unused.
+Global set/reset net(s) unused.
+
+** Pin Resources **
+
+Signal Type    Required     Mapped  |  Pin Type            Used    Total 
+------------------------------------|------------------------------------
+Input         :   29          29    |  I/O              :    51      66
+Output        :   27          27    |  GCK/IO           :     2       3
+Bidirectional :    0           0    |  GTS/IO           :     2       2
+GCK           :    0           0    |  GSR/IO           :     1       1
+GTS           :    0           0    |
+GSR           :    0           0    |
+                 ----        ----
+        Total     56          56
+
+** Power Data **
+
+There are 0 macrocells in high performance mode (MCHP).
+There are 35 macrocells in low power mode (MCLP).
+End of Mapped Resource Summary
+**************************  Errors and Warnings  ***************************
+
+WARNING:Cpld - Unable to retrieve the path to the iSE Project Repository. Will
+   use the default filename of 'cache_controller.ise'.
+*************************  Summary of Mapped Logic  ************************
+
+** 27 Outputs **
+
+Signal                                                    Total Total Loc     Pin  Pin     Pin     Pwr  Slew Reg Init
+Name                                                      Pts   Inps          No.  Type    Use     Mode Rate State
+data_to_device<6>                                         4     7     FB1_1   16   I/O     O       LOW  FAST 
+data_to_device<7>                                         4     7     FB1_4   20   I/O     O       LOW  FAST 
+address_out<1>                                            2     4     FB1_7   25   I/O     O       LOW  FAST RESET
+data_to_device<0>                                         3     5     FB1_10  28   I/O     O       LOW  FAST 
+data_to_device<1>                                         3     5     FB1_13  36   I/O     O       LOW  FAST 
+data_to_device<3>                                         3     5     FB1_16  39   I/O     O       LOW  FAST 
+address_out<2>                                            2     4     FB2_1   87   I/O     O       LOW  FAST RESET
+address_out<3>                                            2     4     FB2_3   91   I/O     O       LOW  FAST RESET
+address_out<4>                                            2     4     FB2_5   95   I/O     O       LOW  FAST RESET
+address_out<5>                                            2     4     FB2_8   97   I/O     O       LOW  FAST RESET
+address_out<7>                                            2     4     FB2_12  6    I/O     O       LOW  FAST RESET
+data_result<1>                                            2     4     FB2_14  9    I/O     O       LOW  FAST RESET
+data_result<3>                                            2     4     FB2_16  10   I/O     O       LOW  FAST RESET
+data_result<4>                                            2     4     FB3_2   32   I/O     O       LOW  FAST RESET
+data_result<5>                                            2     4     FB3_4   50   I/O     O       LOW  FAST RESET
+data_result<6>                                            2     4     FB3_7   54   I/O     O       LOW  FAST RESET
+data_result<7>                                            2     4     FB3_10  60   I/O     O       LOW  FAST RESET
+data_to_device<5>                                         3     5     FB3_13  63   I/O     O       LOW  FAST 
+ec                                                        2     4     FB3_16  64   I/O     O       LOW  FAST 
+em                                                        2     3     FB3_18  59   I/O     O       LOW  FAST 
+address_out<0>                                            2     4     FB4_1   65   I/O     O       LOW  FAST RESET
+address_out<6>                                            2     4     FB4_4   72   I/O     O       LOW  FAST RESET
+data_result<0>                                            2     4     FB4_7   77   I/O     O       LOW  FAST RESET
+data_result<2>                                            2     4     FB4_10  81   I/O     O       LOW  FAST RESET
+data_to_device<2>                                         3     5     FB4_13  85   I/O     O       LOW  FAST 
+data_to_device<4>                                         3     5     FB4_16  86   I/O     O       LOW  FAST 
+rw_out                                                    2     4     FB4_18  79   I/O     O       LOW  FAST RESET
+
+** 8 Buried Nodes **
+
+Signal                                                    Total Total Loc     Pwr  Reg Init
+Name                                                      Pts   Inps          Mode State
+data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2  1     2     FB3_12  LOW  
+data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2  1     2     FB3_14  LOW  
+data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2  1     2     FB3_15  LOW  
+data_to_device_7__and0001/data_to_device_7__and0001_D2    1     2     FB3_17  LOW  
+ec_cmp_eq0000/ec_cmp_eq0000_D2                            1     3     FB4_12  LOW  
+data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2  1     2     FB4_14  LOW  
+data_to_device_6__and0001/data_to_device_6__and0001_D2    1     2     FB4_15  LOW  
+rw_out_OBUF/rw_out_OBUF_RSTF                              2     4     FB4_17  LOW  
+
+** 29 Inputs **
+
+Signal                                                    Loc     Pin  Pin     Pin     
+Name                                                              No.  Type    Use     
+data_from_device<5>                                       FB1_2   13   I/O     I
+data_from_device<1>                                       FB1_3   18   I/O     I
+data_from_device<0>                                       FB1_6   15   I/O     I
+address_in<6>                                             FB1_8   17   I/O     I
+data_from_device<2>                                       FB1_9   22   GCK/I/O I
+read_ready                                                FB1_11  23   GCK/I/O I
+data_in<7>                                                FB1_12  33   I/O     I
+data_in<3>                                                FB1_15  29   I/O     I
+data_from_device<3>                                       FB1_17  30   I/O     I
+address_in<5>                                             FB2_2   94   I/O     I
+data_in<4>                                                FB2_4   93   I/O     I
+hm                                                        FB2_6   96   I/O     I
+data_in<5>                                                FB2_7   3    GTS/I/O I
+address_in<2>                                             FB2_9   99   GSR/I/O I
+data_from_device<6>                                       FB2_10  1    I/O     I
+address_in<0>                                             FB2_11  4    GTS/I/O I
+address_in<3>                                             FB2_13  8    I/O     I
+data_from_device<7>                                       FB2_15  11   I/O     I
+operation<1>                                              FB2_17  12   I/O     I
+address_in<1>                                             FB2_18  92   I/O     I
+data_in<1>                                                FB3_1   41   I/O     I
+address_in<7>                                             FB3_5   35   I/O     I
+address_in<4>                                             FB3_6   53   I/O     I
+data_in<0>                                                FB3_12  61   I/O     I
+data_in<6>                                                FB4_6   76   I/O     I
+operation<0>                                              FB4_8   70   I/O     I
+operation<2>                                              FB4_12  82   I/O     I
+data_in<2>                                                FB4_15  89   I/O     I
+data_from_device<4>                                       FB4_17  90   I/O     I
+
+Legend:
+Pin No. - ~ - User Assigned
+**************************  Function Block Details  ************************
+Legend:
+Total Pt     - Total product terms used by the macrocell signal
+Imp Pt       - Product terms imported from other macrocells
+Exp Pt       - Product terms exported to other macrocells
+               in direction shown
+Unused Pt    - Unused local product terms remaining in macrocell
+Loc          - Location where logic was mapped in device
+Pin Type/Use - I  - Input             GCK - Global Clock
+               O  - Output            GTS - Global Output Enable
+              (b) - Buried macrocell  GSR - Global Set/Reset
+X            - Signal used as input to the macrocell logic.
+Pin No.      - ~  - User Assigned
+*********************************** FB1  ***********************************
+Number of function block inputs used/remaining:               25/29
+Number of signals used by logic mapping into function block:  25
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+data_to_device<6>     4       0     0   1     FB1_1   16    I/O     O
+(unused)              0       0     0   5     FB1_2   13    I/O     I
+(unused)              0       0     0   5     FB1_3   18    I/O     I
+data_to_device<7>     4       0     0   1     FB1_4   20    I/O     O
+(unused)              0       0     0   5     FB1_5   14    I/O     
+(unused)              0       0     0   5     FB1_6   15    I/O     I
+address_out<1>        2       0     0   3     FB1_7   25    I/O     O
+(unused)              0       0     0   5     FB1_8   17    I/O     I
+(unused)              0       0     0   5     FB1_9   22    GCK/I/O I
+data_to_device<0>     3       0     0   2     FB1_10  28    I/O     O
+(unused)              0       0     0   5     FB1_11  23    GCK/I/O I
+(unused)              0       0     0   5     FB1_12  33    I/O     I
+data_to_device<1>     3       0     0   2     FB1_13  36    I/O     O
+(unused)              0       0     0   5     FB1_14  27    GCK/I/O 
+(unused)              0       0     0   5     FB1_15  29    I/O     I
+data_to_device<3>     3       0     0   2     FB1_16  39    I/O     O
+(unused)              0       0     0   5     FB1_17  30    I/O     I
+(unused)              0       0     0   5     FB1_18  40    I/O     
+
+Signals Used by Logic in Function Block
+  1: address_in<1>        10: data_to_device<0>                                         18: data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 
+  2: data_from_device<0>  11: data_to_device<1>                                         19: data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 
+  3: data_from_device<1>  12: data_to_device<3>                                         20: data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 
+  4: data_from_device<3>  13: data_to_device<6>                                         21: ec_cmp_eq0000/ec_cmp_eq0000_D2 
+  5: data_from_device<6>  14: data_to_device<7>                                         22: operation<0> 
+  6: data_from_device<7>  15: data_to_device_6__and0001/data_to_device_6__and0001_D2    23: operation<1> 
+  7: data_in<0>           16: data_to_device_7__and0001/data_to_device_7__and0001_D2    24: operation<2> 
+  8: data_in<1>           17: data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2  25: read_ready 
+  9: data_in<3>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+data_to_device<6>    ....X.......X.X.XX..X...X............... 7
+data_to_device<7>    .....X.......X.X..XXX...X............... 7
+address_out<1>       X....................XXX................ 4
+data_to_device<0>    .X....X..X..........X...X............... 5
+data_to_device<1>    ..X....X..X.........X...X............... 5
+data_to_device<3>    ...X....X..X........X...X............... 5
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB2  ***********************************
+Number of function block inputs used/remaining:               10/44
+Number of signals used by logic mapping into function block:  10
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+address_out<2>        2       0     0   3     FB2_1   87    I/O     O
+(unused)              0       0     0   5     FB2_2   94    I/O     I
+address_out<3>        2       0     0   3     FB2_3   91    I/O     O
+(unused)              0       0     0   5     FB2_4   93    I/O     I
+address_out<4>        2       0     0   3     FB2_5   95    I/O     O
+(unused)              0       0     0   5     FB2_6   96    I/O     I
+(unused)              0       0     0   5     FB2_7   3     GTS/I/O I
+address_out<5>        2       0     0   3     FB2_8   97    I/O     O
+(unused)              0       0     0   5     FB2_9   99    GSR/I/O I
+(unused)              0       0     0   5     FB2_10  1     I/O     I
+(unused)              0       0     0   5     FB2_11  4     GTS/I/O I
+address_out<7>        2       0     0   3     FB2_12  6     I/O     O
+(unused)              0       0     0   5     FB2_13  8     I/O     I
+data_result<1>        2       0     0   3     FB2_14  9     I/O     O
+(unused)              0       0     0   5     FB2_15  11    I/O     I
+data_result<3>        2       0     0   3     FB2_16  10    I/O     O
+(unused)              0       0     0   5     FB2_17  12    I/O     I
+(unused)              0       0     0   5     FB2_18  92    I/O     I
+
+Signals Used by Logic in Function Block
+  1: address_in<2>      5: address_in<7>         8: operation<0> 
+  2: address_in<3>      6: data_from_device<1>   9: operation<1> 
+  3: address_in<4>      7: data_from_device<3>  10: operation<2> 
+  4: address_in<5>    
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+address_out<2>       X......XXX.............................. 4
+address_out<3>       .X.....XXX.............................. 4
+address_out<4>       ..X....XXX.............................. 4
+address_out<5>       ...X...XXX.............................. 4
+address_out<7>       ....X..XXX.............................. 4
+data_result<1>       .....X.XXX.............................. 4
+data_result<3>       ......XXXX.............................. 4
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB3  ***********************************
+Number of function block inputs used/remaining:               16/38
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+(unused)              0       0     0   5     FB3_1   41    I/O     I
+data_result<4>        2       0     0   3     FB3_2   32    I/O     O
+(unused)              0       0     0   5     FB3_3   49    I/O     
+data_result<5>        2       0     0   3     FB3_4   50    I/O     O
+(unused)              0       0     0   5     FB3_5   35    I/O     I
+(unused)              0       0     0   5     FB3_6   53    I/O     I
+data_result<6>        2       0     0   3     FB3_7   54    I/O     O
+(unused)              0       0     0   5     FB3_8   37    I/O     
+(unused)              0       0     0   5     FB3_9   42    I/O     
+data_result<7>        2       0     0   3     FB3_10  60    I/O     O
+(unused)              0       0     0   5     FB3_11  52    I/O     
+data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2
+                      1       0     0   4     FB3_12  61    I/O     I
+data_to_device<5>     3       0     0   2     FB3_13  63    I/O     O
+data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2
+                      1       0     0   4     FB3_14  55    I/O     (b)
+data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2
+                      1       0     0   4     FB3_15  56    I/O     (b)
+ec                    2       0     0   3     FB3_16  64    I/O     O
+data_to_device_7__and0001/data_to_device_7__and0001_D2
+                      1       0     0   4     FB3_17  58    I/O     (b)
+em                    2       0     0   3     FB3_18  59    I/O     O
+
+Signals Used by Logic in Function Block
+  1: data_from_device<4>   7: data_in<7>                      12: hm 
+  2: data_from_device<5>   8: data_to_device<5>               13: operation<0> 
+  3: data_from_device<6>   9: ec                              14: operation<1> 
+  4: data_from_device<7>  10: ec_cmp_eq0000/ec_cmp_eq0000_D2  15: operation<2> 
+  5: data_in<5>           11: em                              16: read_ready 
+  6: data_in<6>          
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+data_result<4>       X...........XXX......................... 4
+data_result<5>       .X..........XXX......................... 4
+data_result<6>       ..X.........XXX......................... 4
+data_result<7>       ...X........XXX......................... 4
+data_to_device_mux0001<7>3/data_to_device_mux0001<7>3_D2 
+                     ......X........X........................ 2
+data_to_device<5>    .X..X..X.X.....X........................ 5
+data_to_device_mux0001<7>1/data_to_device_mux0001<7>1_D2 
+                     ...X...........X........................ 2
+data_to_device_mux0001<6>3/data_to_device_mux0001<6>3_D2 
+                     .....X.........X........................ 2
+ec                   ........XX.X...X........................ 4
+data_to_device_7__and0001/data_to_device_7__and0001_D2 
+                     ...X...........X........................ 2
+em                   ..........XX...X........................ 3
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*********************************** FB4  ***********************************
+Number of function block inputs used/remaining:               16/38
+Number of signals used by logic mapping into function block:  16
+Signal              Total   Imp   Exp Unused  Loc     Pin   Pin     Pin
+Name                Pt      Pt    Pt  Pt               #    Type    Use
+address_out<0>        2       0     0   3     FB4_1   65    I/O     O
+(unused)              0       0     0   5     FB4_2   67    I/O     
+(unused)              0       0     0   5     FB4_3   71    I/O     
+address_out<6>        2       0     0   3     FB4_4   72    I/O     O
+(unused)              0       0     0   5     FB4_5   68    I/O     
+(unused)              0       0     0   5     FB4_6   76    I/O     I
+data_result<0>        2       0     0   3     FB4_7   77    I/O     O
+(unused)              0       0     0   5     FB4_8   70    I/O     I
+(unused)              0       0     0   5     FB4_9   66    I/O     
+data_result<2>        2       0     0   3     FB4_10  81    I/O     O
+(unused)              0       0     0   5     FB4_11  74    I/O     
+ec_cmp_eq0000/ec_cmp_eq0000_D2
+                      1       0     0   4     FB4_12  82    I/O     I
+data_to_device<2>     3       0     0   2     FB4_13  85    I/O     O
+data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2
+                      1       0     0   4     FB4_14  78    I/O     (b)
+data_to_device_6__and0001/data_to_device_6__and0001_D2
+                      1       0     0   4     FB4_15  89    I/O     I
+data_to_device<4>     3       0     0   2     FB4_16  86    I/O     O
+rw_out_OBUF/rw_out_OBUF_RSTF
+                      2       0     0   3     FB4_17  90    I/O     I
+rw_out                2       0     0   3     FB4_18  79    I/O     O
+
+Signals Used by Logic in Function Block
+  1: address_in<0>         7: data_in<2>                      12: operation<0> 
+  2: address_in<6>         8: data_in<4>                      13: operation<1> 
+  3: data_from_device<0>   9: data_to_device<2>               14: operation<2> 
+  4: data_from_device<2>  10: data_to_device<4>               15: read_ready 
+  5: data_from_device<4>  11: ec_cmp_eq0000/ec_cmp_eq0000_D2  16: rw_out_OBUF/rw_out_OBUF_RSTF 
+  6: data_from_device<6> 
+
+Signal                        1         2         3         4 FB
+Name                0----+----0----+----0----+----0----+----0 Inputs
+address_out<0>       X..........XXX.......................... 4
+address_out<6>       .X.........XXX.......................... 4
+data_result<0>       ..X........XXX.......................... 4
+data_result<2>       ...X.......XXX.......................... 4
+ec_cmp_eq0000/ec_cmp_eq0000_D2 
+                     ...........XXX.......................... 3
+data_to_device<2>    ...X..X.X.X...X......................... 5
+data_to_device_mux0001<6>1/data_to_device_mux0001<6>1_D2 
+                     .....X........X......................... 2
+data_to_device_6__and0001/data_to_device_6__and0001_D2 
+                     .....X........X......................... 2
+data_to_device<4>    ....X..X.XX...X......................... 5
+rw_out_OBUF/rw_out_OBUF_RSTF 
+                     ...........XXXX......................... 4
+rw_out               ...........XXX.X........................ 4
+                    0----+----1----+----2----+----3----+----4
+                              0         0         0         0
+*******************************  Equations  ********************************
+
+********** Mapped Logic **********
+
+FDCPE_address_out0: FDCPE port map (address_out(0),'0','0',address_out_CLR(0),address_out_PRE(0));
+address_out_CLR(0) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(0));
+address_out_PRE(0) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(0));
+
+FDCPE_address_out1: FDCPE port map (address_out(1),'0','0',address_out_CLR(1),address_out_PRE(1));
+address_out_CLR(1) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(1));
+address_out_PRE(1) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(1));
+
+FDCPE_address_out2: FDCPE port map (address_out(2),'0','0',address_out_CLR(2),address_out_PRE(2));
+address_out_CLR(2) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(2));
+address_out_PRE(2) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(2));
+
+FDCPE_address_out3: FDCPE port map (address_out(3),'0','0',address_out_CLR(3),address_out_PRE(3));
+address_out_CLR(3) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(3));
+address_out_PRE(3) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(3));
+
+FDCPE_address_out4: FDCPE port map (address_out(4),'0','0',address_out_CLR(4),address_out_PRE(4));
+address_out_CLR(4) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(4));
+address_out_PRE(4) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(4));
+
+FDCPE_address_out5: FDCPE port map (address_out(5),'0','0',address_out_CLR(5),address_out_PRE(5));
+address_out_CLR(5) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(5));
+address_out_PRE(5) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(5));
+
+FDCPE_address_out6: FDCPE port map (address_out(6),'0','0',address_out_CLR(6),address_out_PRE(6));
+address_out_CLR(6) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(6));
+address_out_PRE(6) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(6));
+
+FDCPE_address_out7: FDCPE port map (address_out(7),'0','0',address_out_CLR(7),address_out_PRE(7));
+address_out_CLR(7) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT address_in(7));
+address_out_PRE(7) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	address_in(7));
+
+FDCPE_data_result0: FDCPE port map (data_result(0),'0','0',data_result_CLR(0),data_result_PRE(0));
+data_result_CLR(0) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(0));
+data_result_PRE(0) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(0));
+
+FDCPE_data_result1: FDCPE port map (data_result(1),'0','0',data_result_CLR(1),data_result_PRE(1));
+data_result_CLR(1) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(1));
+data_result_PRE(1) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(1));
+
+FDCPE_data_result2: FDCPE port map (data_result(2),'0','0',data_result_CLR(2),data_result_PRE(2));
+data_result_CLR(2) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(2));
+data_result_PRE(2) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(2));
+
+FDCPE_data_result3: FDCPE port map (data_result(3),'0','0',data_result_CLR(3),data_result_PRE(3));
+data_result_CLR(3) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(3));
+data_result_PRE(3) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(3));
+
+FDCPE_data_result4: FDCPE port map (data_result(4),'0','0',data_result_CLR(4),data_result_PRE(4));
+data_result_CLR(4) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(4));
+data_result_PRE(4) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(4));
+
+FDCPE_data_result5: FDCPE port map (data_result(5),'0','0',data_result_CLR(5),data_result_PRE(5));
+data_result_CLR(5) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(5));
+data_result_PRE(5) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(5));
+
+FDCPE_data_result6: FDCPE port map (data_result(6),'0','0',data_result_CLR(6),data_result_PRE(6));
+data_result_CLR(6) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(6));
+data_result_PRE(6) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(6));
+
+FDCPE_data_result7: FDCPE port map (data_result(7),'0','0',data_result_CLR(7),data_result_PRE(7));
+data_result_CLR(7) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	NOT data_from_device(7));
+data_result_PRE(7) <= (NOT operation(0) AND operation(2) AND NOT operation(1) AND 
+	data_from_device(7));
+
+
+data_to_device(0) <= ((read_ready AND data_from_device(0))
+	OR (data_to_device(0) AND NOT read_ready AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)
+	OR (NOT read_ready AND data_in(0) AND 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2));
+
+
+data_to_device(1) <= ((read_ready AND data_from_device(1))
+	OR (data_to_device(1) AND NOT read_ready AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)
+	OR (NOT read_ready AND data_in(1) AND 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2));
+
+
+data_to_device(2) <= ((read_ready AND data_from_device(2))
+	OR (data_to_device(2) AND NOT read_ready AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)
+	OR (NOT read_ready AND data_in(2) AND 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2));
+
+
+data_to_device(3) <= ((read_ready AND data_from_device(3))
+	OR (data_to_device(3) AND NOT read_ready AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)
+	OR (NOT read_ready AND data_in(3) AND 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2));
+
+
+data_to_device(4) <= ((read_ready AND data_from_device(4))
+	OR (data_to_device(4) AND NOT read_ready AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)
+	OR (NOT read_ready AND data_in(4) AND 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2));
+
+
+data_to_device(5) <= ((read_ready AND data_from_device(5))
+	OR (data_to_device(5) AND NOT read_ready AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)
+	OR (NOT read_ready AND data_in(5) AND 
+	ec_cmp_eq0000/ec_cmp_eq0000_D2));
+
+
+data_to_device(6) <= NOT (((read_ready AND NOT data_from_device(6))
+	OR (NOT data_to_device(6) AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2 AND 
+	NOT data_to_device_6__and0001/data_to_device_6__and0001_D2)
+	OR (NOT data_to_device(6) AND 
+	NOT data_to_device_6__and0001/data_to_device_6__and0001_D2 AND 
+	NOT data_to_device_mux0001(6)3/data_to_device_mux0001(6)3_D2 AND 
+	NOT data_to_device_mux0001(6)1/data_to_device_mux0001(6)1_D2)
+	OR (ec_cmp_eq0000/ec_cmp_eq0000_D2 AND 
+	NOT data_to_device_6__and0001/data_to_device_6__and0001_D2 AND 
+	NOT data_to_device_mux0001(6)3/data_to_device_mux0001(6)3_D2 AND 
+	NOT data_to_device_mux0001(6)1/data_to_device_mux0001(6)1_D2)));
+
+
+data_to_device(7) <= NOT (((read_ready AND NOT data_from_device(7))
+	OR (NOT data_to_device(7) AND 
+	NOT ec_cmp_eq0000/ec_cmp_eq0000_D2 AND 
+	NOT data_to_device_7__and0001/data_to_device_7__and0001_D2)
+	OR (NOT data_to_device(7) AND 
+	NOT data_to_device_7__and0001/data_to_device_7__and0001_D2 AND 
+	NOT data_to_device_mux0001(7)3/data_to_device_mux0001(7)3_D2 AND 
+	NOT data_to_device_mux0001(7)1/data_to_device_mux0001(7)1_D2)
+	OR (ec_cmp_eq0000/ec_cmp_eq0000_D2 AND 
+	NOT data_to_device_7__and0001/data_to_device_7__and0001_D2 AND 
+	NOT data_to_device_mux0001(7)3/data_to_device_mux0001(7)3_D2 AND 
+	NOT data_to_device_mux0001(7)1/data_to_device_mux0001(7)1_D2)));
+
+
+data_to_device_6__and0001/data_to_device_6__and0001_D2 <= (read_ready AND data_from_device(6));
+
+
+data_to_device_7__and0001/data_to_device_7__and0001_D2 <= (read_ready AND data_from_device(7));
+
+
+data_to_device_mux0001(6)1/data_to_device_mux0001(6)1_D2 <= (read_ready AND data_from_device(6));
+
+
+data_to_device_mux0001(6)3/data_to_device_mux0001(6)3_D2 <= (NOT read_ready AND data_in(6));
+
+
+data_to_device_mux0001(7)1/data_to_device_mux0001(7)1_D2 <= (read_ready AND data_from_device(7));
+
+
+data_to_device_mux0001(7)3/data_to_device_mux0001(7)3_D2 <= (NOT read_ready AND data_in(7));
+
+
+ec <= NOT (((NOT read_ready AND hm)
+	OR (NOT ec AND NOT read_ready AND NOT ec_cmp_eq0000/ec_cmp_eq0000_D2)));
+
+
+ec_cmp_eq0000/ec_cmp_eq0000_D2 <= (NOT operation(0) AND operation(2) AND NOT operation(1));
+
+
+em <= ((NOT read_ready AND em)
+	OR (NOT read_ready AND hm));
+
+FDCPE_rw_out: FDCPE port map (rw_out,'0','0',rw_out_OBUF/rw_out_OBUF_RSTF,rw_out_PRE);
+rw_out_PRE <= (operation(0) AND NOT operation(2) AND NOT operation(1) AND 
+	NOT rw_out_OBUF/rw_out_OBUF_RSTF);
+
+
+rw_out_OBUF/rw_out_OBUF_RSTF <= ((read_ready)
+	OR (NOT operation(0) AND NOT operation(2) AND operation(1)));
+
+Register Legend:
+ FDCPE (Q,D,C,CLR,PRE,CE); 
+ FTCPE (Q,D,C,CLR,PRE,CE); 
+ LDCP  (Q,D,G,CLR,PRE); 
+
+******************************  Device Pin Out *****************************
+
+Device : XA9572XL-15-TQ100
+
+
+   --------------------------------------------------  
+  /100 98  96  94  92  90  88  86  84  82  80  78  76  \
+ |   99  97  95  93  91  89  87  85  83  81  79  77    |
+ | 1                                               75  | 
+ | 2                                               74  | 
+ | 3                                               73  | 
+ | 4                                               72  | 
+ | 5                                               71  | 
+ | 6                                               70  | 
+ | 7                                               69  | 
+ | 8                                               68  | 
+ | 9                                               67  | 
+ | 10                                              66  | 
+ | 11                                              65  | 
+ | 12                                              64  | 
+ | 13               XA9572XL-15-TQ100              63  | 
+ | 14                                              62  | 
+ | 15                                              61  | 
+ | 16                                              60  | 
+ | 17                                              59  | 
+ | 18                                              58  | 
+ | 19                                              57  | 
+ | 20                                              56  | 
+ | 21                                              55  | 
+ | 22                                              54  | 
+ | 23                                              53  | 
+ | 24                                              52  | 
+ | 25                                              51  | 
+ |   27  29  31  33  35  37  39  41  43  45  47  49    |
+  \26  28  30  32  34  36  38  40  42  44  46  48  50  /
+   --------------------------------------------------  
+
+
+Pin Signal                         Pin Signal                        
+No. Name                           No. Name                          
+  1 data_from_device<6>              51 VCC                           
+  2 NC                               52 KPR                           
+  3 data_in<5>                       53 address_in<4>                 
+  4 address_in<0>                    54 data_result<6>                
+  5 VCC                              55 KPR                           
+  6 address_out<7>                   56 KPR                           
+  7 NC                               57 VCC                           
+  8 address_in<3>                    58 KPR                           
+  9 data_result<1>                   59 em                            
+ 10 data_result<3>                   60 data_result<7>                
+ 11 data_from_device<7>              61 data_in<0>                    
+ 12 operation<1>                     62 GND                           
+ 13 data_from_device<5>              63 data_to_device<5>             
+ 14 KPR                              64 ec                            
+ 15 data_from_device<0>              65 address_out<0>                
+ 16 data_to_device<6>                66 KPR                           
+ 17 address_in<6>                    67 KPR                           
+ 18 data_from_device<1>              68 KPR                           
+ 19 NC                               69 GND                           
+ 20 data_to_device<7>                70 operation<0>                  
+ 21 GND                              71 KPR                           
+ 22 data_from_device<2>              72 address_out<6>                
+ 23 read_ready                       73 NC                            
+ 24 NC                               74 KPR                           
+ 25 address_out<1>                   75 GND                           
+ 26 VCC                              76 data_in<6>                    
+ 27 KPR                              77 data_result<0>                
+ 28 data_to_device<0>                78 KPR                           
+ 29 data_in<3>                       79 rw_out                        
+ 30 data_from_device<3>              80 NC                            
+ 31 GND                              81 data_result<2>                
+ 32 data_result<4>                   82 operation<2>                  
+ 33 data_in<7>                       83 TDO                           
+ 34 NC                               84 GND                           
+ 35 address_in<7>                    85 data_to_device<2>             
+ 36 data_to_device<1>                86 data_to_device<4>             
+ 37 KPR                              87 address_out<2>                
+ 38 VCC                              88 VCC                           
+ 39 data_to_device<3>                89 data_in<2>                    
+ 40 KPR                              90 data_from_device<4>           
+ 41 data_in<1>                       91 address_out<3>                
+ 42 KPR                              92 address_in<1>                 
+ 43 NC                               93 data_in<4>                    
+ 44 GND                              94 address_in<5>                 
+ 45 TDI                              95 address_out<4>                
+ 46 NC                               96 hm                            
+ 47 TMS                              97 address_out<5>                
+ 48 TCK                              98 VCC                           
+ 49 KPR                              99 address_in<2>                 
+ 50 data_result<5>                  100 GND                           
+
+
+Legend :  NC  = Not Connected, unbonded pin
+         PGND = Unused I/O configured as additional Ground pin
+         TIE  = Unused I/O floating -- must tie to VCC, GND or other signal
+         KPR  = Unused I/O with weak keeper (leave unconnected)
+         VCC  = Dedicated Power Pin
+         GND  = Dedicated Ground Pin
+         TDI  = Test Data In, JTAG pin
+         TDO  = Test Data Out, JTAG pin
+         TCK  = Test Clock, JTAG pin
+         TMS  = Test Mode Select, JTAG pin
+  PROHIBITED  = User reserved pin
+****************************  Compiler Options  ****************************
+
+Following is a list of all global compiler options used by the fitter run.
+
+Device(s) Specified                         : xa95*xl-*-*
+Optimization Method                         : DENSITY
+Multi-Level Logic Optimization              : ON
+Ignore Timing Specifications                : OFF
+Default Register Power Up Value             : LOW
+Keep User Location Constraints              : ON
+What-You-See-Is-What-You-Get                : OFF
+Exhaustive Fitting                          : OFF
+Keep Unused Inputs                          : OFF
+Slew Rate                                   : FAST
+Power Mode                                  : LOW
+Ground on Unused IOs                        : OFF
+Set I/O Pin Termination                     : KEEPER
+Global Clock Optimization                   : ON
+Global Set/Reset Optimization               : ON
+Global Ouput Enable Optimization            : ON
+Input Limit                                 : 54
+Pterm Limit                                 : 25

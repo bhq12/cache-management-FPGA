@@ -5,3 +5,5 @@ xst -intstyle ise -ifn "P:/cache_controller/simple_ram.xst" -ofn "P:/cache_contr
 xst -intstyle ise -ifn "P:/cache_controller/simple_ram.xst" -ofn "P:/cache_controller/simple_ram.syr" 
 ngdbuild -intstyle ise -dd _ngo -i -p xa9500xl simple_ram.ngc simple_ram.ngd  
 cpldfit -intstyle ise -p xa95*xl-*-* -ofmt vhdl -optimize density -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -terminate keeper simple_ram.ngd 
+xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/simple_ram.xst" -ofn "P:/cache-management-FPGA/cache_controller/simple_ram.syr" 
+xst -intstyle ise -ifn "P:/cache-management-FPGA/cache_controller/simple_ram.xst" -ofn "P:/cache-management-FPGA/cache_controller/simple_ram.syr" 
