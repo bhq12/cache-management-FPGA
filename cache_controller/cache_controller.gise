@@ -139,9 +139,7 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="cache_system_two_way.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="cache_system_two_way.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="cache_system_two_way.xst"/>
-    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_two_way_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="cache_system_two_way_tb_isim_beh.exe"/>
-    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="cache_system_two_way_tb_isim_beh.wdb"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_two_way_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="cache_system_two_way_xst.xrpt"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="cache_system_vhdl.prj"/>
@@ -163,7 +161,9 @@
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="simple_ram_envsettings.html"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="simple_ram_ngdbuild.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="simple_ram_summary.html"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="simple_ram_tb_beh.prj"/>
     <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_ISIM_EXE" xil_pn:name="simple_ram_tb_isim_beh.exe"/>
+    <file xil_pn:fileType="FILE_ISIM_MISC" xil_pn:name="simple_ram_tb_isim_beh.wdb"/>
     <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="simple_ram_tb_stx_beh.prj"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="simple_ram_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="simple_ram_xst.xrpt"/>
@@ -178,7 +178,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476104285" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476104285">
+    <transform xil_pn:end_ts="1476129976" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1476129976">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="cache_controller_frog.vhd"/>
@@ -194,11 +194,11 @@
       <outfile xil_pn:name="simple_ram.vhd"/>
       <outfile xil_pn:name="simple_ram_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1476104240" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-5618771094972602688" xil_pn:start_ts="1476104240">
+    <transform xil_pn:end_ts="1476130219" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="-7219355492176425528" xil_pn:start_ts="1476130219">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1476104285" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1476104285">
+    <transform xil_pn:end_ts="1476129976" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1476129976">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="cache_controller_frog.vhd"/>
@@ -214,29 +214,22 @@
       <outfile xil_pn:name="simple_ram.vhd"/>
       <outfile xil_pn:name="simple_ram_tb.vhd"/>
     </transform>
-    <transform xil_pn:end_ts="1476104292" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-4107519222671187298" xil_pn:start_ts="1476104285">
+    <transform xil_pn:end_ts="1476130222" xil_pn:in_ck="3008915987592435675" xil_pn:name="TRAN_ISimulateBehavioralModelRunFuse" xil_pn:prop_ck="-6119342210014081490" xil_pn:start_ts="1476130219">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="cache_system_two_way_tb_beh.prj"/>
-      <outfile xil_pn:name="cache_system_two_way_tb_isim_beh.exe"/>
       <outfile xil_pn:name="fuse.log"/>
       <outfile xil_pn:name="isim"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="simple_ram_tb_beh.prj"/>
+      <outfile xil_pn:name="simple_ram_tb_isim_beh.exe"/>
       <outfile xil_pn:name="xilinxsim.ini"/>
     </transform>
-    <transform xil_pn:end_ts="1476104293" xil_pn:in_ck="8828384327062100436" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-7537987239759714207" xil_pn:start_ts="1476104292">
+    <transform xil_pn:end_ts="1476130222" xil_pn:in_ck="8828384327062100436" xil_pn:name="TRAN_ISimulateBehavioralModel" xil_pn:prop_ck="-8412129707822042575" xil_pn:start_ts="1476130222">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForProperties"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
-      <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="OutputChanged"/>
-      <outfile xil_pn:name="cache_system_two_way_tb_isim_beh.wdb"/>
       <outfile xil_pn:name="isim.cmd"/>
       <outfile xil_pn:name="isim.log"/>
+      <outfile xil_pn:name="simple_ram_tb_isim_beh.wdb"/>
     </transform>
     <transform xil_pn:end_ts="1476059911" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1476059911">
       <status xil_pn:value="SuccessfullyRun"/>

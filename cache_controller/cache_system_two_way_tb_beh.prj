@@ -1,5 +1,0 @@
-vhdl work "simple_ram.vhd"
-vhdl work "cache_ram_two_way.vhd"
-vhdl work "cache_controller_frog.vhd"
-vhdl work "cache_system_two_way.vhd"
-vhdl work "cache_system_two_way_tb.vhd"

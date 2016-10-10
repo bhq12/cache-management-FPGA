@@ -1,5 +1,5 @@
 ISim log file
-Running: P:\My Documents\cache-management-FPGA\cache_controller\cache_system_two_way_tb_isim_beh.exe -gui -tclbatch isim.cmd -wdb P:/My Documents/cache-management-FPGA/cache_controller/cache_system_two_way_tb_isim_beh.wdb 
+Running: C:\Users\jss82\Desktop\462 demo\cache-management-FPGA\cache_controller\simple_ram_tb_isim_beh.exe -gui -tclbatch isim.cmd -wdb C:/Users/jss82/Desktop/462 demo/cache-management-FPGA/cache_controller/simple_ram_tb_isim_beh.wdb 
 ISim M.81d (signature 0xcb73ee62)
 ----------------------------------------------------------------------
 INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to '2100@licserver'.
@@ -20,7 +20,6 @@ Time resolution is 1 ps
 # run 1000 ns
 Simulator is doing circuit initialization process.
 Finished circuit initialization process.
-at 210 ns: Note: Starting testing environment setup (/cache_system_two_way_tb/).
-at 280 ns: Error: Case: Cache read hit error: expected 00101010
-at 320 ns: Error: Case: Cache read hit error: expected 00101000
-at 330 ns: Note: Finished running all unit tests (/cache_system_two_way_tb/).
+at 10 ns: Note: Starting testing environment setup (/simple_ram_tb/).
+at 70 ns: Note: Finished testing environment setup (/simple_ram_tb/).
+at 160 ns: Note: Finished running all unit tests (/simple_ram_tb/).

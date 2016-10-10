@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2016-10-11T02:05:36</DateModified>
+  <DateModified>2016-10-11T08:59:00</DateModified>
   <ModuleName>cache_system_two_way</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
-  <SavedFilePath>//file/usersm$/mrh129/home/My Documents/cache-management-FPGA/cache_controller/iseconfig/cache_system_two_way.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>P:/My Documents/cache-management-FPGA/cache_controller</ImplementationReportsDirectory>
+  <SavedFilePath>C:/Users/jss82/Desktop/462 demo/cache-management-FPGA/cache_controller/iseconfig/cache_system_two_way.xreport</SavedFilePath>
+  <ImplementationReportsDirectory>C:/Users/jss82/Desktop/462 demo/cache-management-FPGA/cache_controller\</ImplementationReportsDirectory>
   <DateInitialized>2016-10-11T02:05:35</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

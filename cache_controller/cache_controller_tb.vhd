@@ -45,7 +45,8 @@ ARCHITECTURE behavior OF cache_controller_tb IS
     PORT(
          clk : IN  std_logic;
          data_in : IN  std_logic_vector(7 downto 0);
-         data_from_device : IN  std_logic_vector(7 downto 0);
+         data_from_cache : IN  std_logic_vector(7 downto 0);
+         data_from_memory : IN  std_logic_vector(7 downto 0);
          address_in : IN  unsigned(7 downto 0);
          operation : IN  std_logic_vector(2 downto 0);
          data_to_device : OUT  std_logic_vector(7 downto 0);
@@ -63,7 +64,9 @@ ARCHITECTURE behavior OF cache_controller_tb IS
    --Inputs
    signal clk : std_logic := '0';
    signal data_in : std_logic_vector(7 downto 0) := (others => '0');
-   signal data_from_device : std_logic_vector(7 downto 0) := (others => '0');
+   signal data_from_cache : std_logic_vector(7 downto 0) := (others => '0');
+	signal data_from_memory : std_logic_vector(7 downto 0) := (others => '0');
+
    signal address_in : unsigned(7 downto 0) := (others => '0');
    signal operation : std_logic_vector(2 downto 0) := (others => '0');
    signal hm : std_logic := '0';
@@ -86,7 +89,8 @@ BEGIN
    uut: cache_controller_frog PORT MAP (
           clk => clk,
           data_in => data_in,
-          data_from_device => data_from_device,
+          data_from_memory => data_from_memory,
+			 data_from_cache => data_from_cache,
           address_in => address_in,
           operation => operation,
           data_to_device => data_to_device,
@@ -134,7 +138,7 @@ BEGIN
 		wait for 10 ns;
 		hm <= '1';
 		wait for 10 ns;
-		data_from_device <= "00101000";
+		data_from_cache <= "00101000";
 		wait for 10 ns;
 		read_ready <= '1';
 

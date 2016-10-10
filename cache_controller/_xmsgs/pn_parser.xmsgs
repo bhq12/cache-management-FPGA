@@ -8,22 +8,7 @@
 <!-- Copyright (c) 1995-2010 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/cache_controller_frog.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/cache_ram.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/cache_ram_two_way.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/cache_system.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/cache_system_two_way.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;P:/My Documents/cache-management-FPGA/cache_controller/simple_ram.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/jss82/Desktop/462 demo/cache-management-FPGA/cache_controller/cache_controller_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
